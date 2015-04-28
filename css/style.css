@@ -823,7 +823,7 @@
 
 			#banner .inner header {
 				display: inline-block;			
-				margin: 0 0 2em 0;
+				margin: 0 0 1em 0;
 				padding: 3px 0 3px 0;
 			}
 
@@ -842,7 +842,6 @@
 					font-weight: 100;
 					letter-spacing: 0.2em;
 					margin: 0;
-					padding-left: 0.05em;
 					position: relative;
 					text-transform: uppercase;
 				}
@@ -1098,37 +1097,34 @@
 			width: 5em;
 		}
 
-		#banner > div > img{
-			width: 20%;
-		    opacity: 0.4;
-    		filter: alpha(opacity=40); /* For IE8 and earlier */		
+		#banner > div > header > img{
+			width: 40%;
+			opacity: 0.4;
+		    filter: alpha(opacity=40); /* For IE8 and earlier */		
 		}
 
+		#main > section.wrapper.style1.container.special > div > div > section:hover
+		{
 
-#main > header > img{
-	width: 15em;
-	margin-bottom: 5em;
-}
+		    background: -webkit-linear-gradient(red, transparent); /* For Safari 5.1 to 6.0 */
+		    background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
+		    background: -moz-linear-gradient(red, blue); /* For Firefox 3.6 to 15 */
+		    background: linear-gradient(transparent, #E8F0FF ); /* Standard syntax (must be last) */		  
+		    cursor: pointer;   
 
-#main > section.wrapper.style1.container.special > div > div > section:hover
-{
+		}
 
-    background: -webkit-linear-gradient(red, transparent); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(red, blue); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(transparent, #E8F0FF ); /* Standard syntax (must be last) */
-  
-    cursor: pointer;
-       
+		#main > section.wrapper.style1.container.special > div > div > section > p
+		{
 
-}
+			  padding-bottom: 1em;
+		}
 
-#main > section.wrapper.style1.container.special > div > div > section > p
-{
+		#main{
+			padding-bottom: 0;
+		}
+		#main > header > img{
+			width: 15em;
+			margin-bottom: 5em:  
+		}
 
-	  padding-bottom: 2em;
-}
-
-#main{
-	padding-bottom: 0;
-}
