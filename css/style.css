@@ -735,8 +735,8 @@
 		background: #fff;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		line-height: 2.25em;
-		min-width: 13em;
-		padding: 1em 0;
+		min-width: 11em;
+		padding: .5em 0;
 		text-transform: uppercase;
 		margin-top: calc(-1em + 1px);
 	}
@@ -812,18 +812,15 @@
 			-webkit-animation-fill-mode: forwards;
 			-o-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
-	
+			animation-fill-mode: forwards;	
 			color: white;
 			display: inline-block;
 			opacity: 0;
-			padding: 3em;
 			text-align: center;
 		}
 
 			#banner .inner header {
-				display: inline-block;			
-				margin: 0 0 1em 0;
+				display: inline-block;
 				padding: 3px 0 3px 0;
 			}
 
@@ -889,7 +886,7 @@
 			}
 
 	body.index #main {
-		padding-top: 5em;
+		padding-top: 4em;
 	}
 
 /* CTA */
@@ -1127,4 +1124,8 @@
 			width: 15em;
 			margin-bottom: 5em:  
 		}
+
+#main > header > h2{
+	padding-top: 1em;
+}
 
