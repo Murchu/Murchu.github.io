@@ -1124,18 +1124,27 @@
 }
 
 #main > section.wrapper.style1.container.special img{
-
+   -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
 	opacity: 0.5;
-	padding-bottom: 1em;
+	
 }
 
 #main > section.wrapper.style1.container.special img:hover{
 
 	opacity: 0.8;
-	    transition: opacity .5s ease-out;
-    -moz-transition: opacity .5s ease-out;
-    -webkit-transition: opacity .5s ease-out;
-    -o-transition: opacity .5s ease-out;
 
+      -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg); 
+    -o-transform:rotate(360deg);
 }
 
