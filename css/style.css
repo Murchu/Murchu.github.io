@@ -1136,3 +1136,61 @@
 
 }
 
+
+/* ==================================================================================================================== */
+/* TABLE
+/* ==================================================================================================================== */
+
+#timetablediv table
+{
+	border-collapse:collapse;
+	empty-cells:hide;
+	text-align:center;
+	margin-right:auto;
+	margin-left:auto;
+	width: 100%;
+	color: black;
+	 margin-bottom: 25px;
+}
+
+table th, td
+{
+	border: 1px solid black;	
+	vertical-align:text-center;	
+	font-size:1em;
+}
+
+table a:link 
+{	
+	color:black;
+}
+
+table a:hover 
+{
+	color:white;
+} 
+
+table:nth-child(even) {
+    background-color: #CAE1FF;
+}
+
+.csp /* Client-side Programming */						
+{	background-color:#91C3DC;	}
+
+.ws /* Web Security */							
+{	background-color: #C1A3FF;	}
+
+.xml/* Advanced XML Technologies */					
+{	background-color:#ACD79C; 	}
+
+.se /* Software Engineering */ 							
+{	background-color:#FCE655;	}
+
+.ssp /*Usability Engineering*/							
+{	background-color:#FFA824;	}
+
+.md 	/* Middleware */					
+{	background-color:#FF8282;	}
+
+.wp 	/* Work Placement */					
+{	background-color:#FFAECC;	
