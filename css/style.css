@@ -1150,17 +1150,22 @@
 	margin-left:auto;
 	width: 80%;
 	color: black;
-	 margin-bottom: 25px;
+	margin-bottom: 25px;
+	margin-top: 100px;
 }
 
+#timetablediv p 
+{
+	margin: 0px;
+}
 table th, td
 {
-	border: 1px solid black;	
+	border: 1px solid #888888;	
 	vertical-align:text-center;	
 	font-size:1em;
 }
 
-table a:link 
+#timetablediv table a:link 
 {	
 	color:black;
 }
