@@ -1165,11 +1165,15 @@ table th, td
 	font-size:1em;
 }
 
-#timetablediv table a:link 
+#timetablediv table 
 {	
 	color:black;
 }
 
+table a 
+{
+	color:black;
+}
 table a:hover 
 {
 	color:white;
@@ -1179,17 +1183,17 @@ table:nth-child(even) {
     background-color: #CAE1FF;
 }
 
-.csp /* Client-side Programming */						
-{	background-color:#91C3DC;	}
+.ins /* Introduction Network Security */						
+{	background-color:#FE938C;	}
 
-.ws /* Web Security */							
-{	background-color: #C1A3FF;	}
+.ase /* Advanced Software Engineering */							
+{	background-color: #C0B9DD;	}
 
-.xml/* Advanced XML Technologies */					
+.ir/* Information Retrieval */					
 {	background-color:#ACD79C; 	}
 
-.se /* Software Engineering */ 							
-{	background-color:#FCE655;	}
+.CS4620 /* Functional Programming I */ 							
+{	background-color:#75C9C8;	}
 
 .ssp /*Usability Engineering*/							
 {	background-color:#FFA824;	}
