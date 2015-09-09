@@ -1179,9 +1179,7 @@ table a:hover
 	color:white;
 } 
 
-table:nth-child(even) {
-    background-color: #CAE1FF;
-}
+
 
 .ins /* Introduction Network Security */						
 {	background-color:#FE938C;	}
