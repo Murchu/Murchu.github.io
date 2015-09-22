@@ -1,3 +1,4 @@
+/* @import url("../../css/style.css"); */
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
@@ -1056,6 +1057,7 @@
 
 /* Nav */
 
+
 	#nav a {
 		position: relative;
 		display: inline-block;
@@ -1074,6 +1076,7 @@
 	#main {
 		position: relative;
 		overflow: hidden;
+		
 	}
 
 	.panel {
@@ -1226,6 +1229,7 @@
 				width: 45em;
 				margin: 0 auto;
 				opacity: 0.00001;
+				padding-top: 5em;
 			}
 
 				#wrapper.tall {
