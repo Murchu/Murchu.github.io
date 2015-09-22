@@ -1613,4 +1613,8 @@
 	}
 			
 
-	
+	.caption{
+		text-align: center;
+		padding-top: 8px;
+		font-size: 0.8em;
+	}
