@@ -2,11 +2,7 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
-/*
-	Astral by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 /* Reset */
 
@@ -1229,7 +1225,7 @@
 				width: 45em;
 				margin: 0 auto;
 				opacity: 0.00001;
-				padding-top: 5em;
+				padding-top: 2.5em !important; 
 			}
 
 				#wrapper.tall {
