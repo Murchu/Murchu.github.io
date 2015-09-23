@@ -1,5 +1,5 @@
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+@import url("http://fonts.googleapis.com/css?family=Roboto:300,400,900");
 
 
 
@@ -746,10 +746,13 @@
 	body {
 		background-image: url("images/overlay.png"), url("images/bg.jpg");
 		background-repeat: repeat, no-repeat;
-		background-size: auto, 100% 100%;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 300;
-		color: #777777;
+		background-size: auto, 100% 100%;	
+		color: #7c8081;
+		font-family: 'Lato', sans-serif;
+		font-size: 15pt;
+		font-weight: 400;
+		letter-spacing: 0.025em;
+		line-height: 1.75em;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -763,10 +766,10 @@
 			animation: none !important;
 		}
 
-	input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+	input, textarea, select {		;
 		font-weight: 300;
-		color: #777777;
+		color: #7c8081;
+		font-family: 'Lato', sans-serif;7;
 	}
 
 	strong, b, h1, h2, h3, h4, h5, h6 {
@@ -786,7 +789,7 @@
 
 	hr {
 		border: 0;
-		border-top: solid 1px #ddd;
+		border-top: solid 2px #ddd;
 		padding: 1.5em 0 0 0;
 		margin: 1.75em 0 0 0;
 	}
@@ -1592,8 +1595,8 @@
 	@keyframes reveal-portalheader { 0% { top: -5em; } 100% { top: 0; } }
 
 	#portalheader {
-		background: white;
-		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);		;
+		/*background: white;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075); */
 		cursor: default;
 		font-size: 0.3em;
 		left: 0;
@@ -1602,11 +1605,12 @@
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+
 	}
 
 
 	#logo > a {
-		color: #7c8081 !important;
+		color: #ffffff !important;
 		font-family: 'Lato', sans-serif;
 		font-weight: 900;		
  		text-decoration: none;
