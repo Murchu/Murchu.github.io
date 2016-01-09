@@ -1162,7 +1162,7 @@ table th, td
 {
 	border: 1px solid #888888;	
 	vertical-align:text-center;	
-	font-size:1em;
+	font-size:80%;
 }
 
 #timetablediv table 
@@ -1181,23 +1181,16 @@ table a:hover
 
 
 
-.ins /* Introduction Network Security */						
+
+.CS4615 /* Computer Systems Security */						
 {	background-color:#FE938C;	}
 
-.ase /* Advanced Software Engineering */							
+.CS4403 /* Introduction to Embedded Systems*/							
 {	background-color: #C0B9DD;	}
 
-.ir/* Information Retrieval */					
+.CS4508 /* Software System Engineering */					
 {	background-color:#ACD79C; 	}
 
-.CS4620 /* Functional Programming I */ 							
+.CS4093 /* Special Topics in Computing II */ 							
 {	background-color:#75C9C8;	}
 
-.CS4402 /* Parallel and Grid Computing */							
-{	background-color:#FFA824;	}
-
-.md 	/* Middleware */					
-{	background-color:#FF8282;	}
-
-.wp 	/* Work Placement */					
-{	background-color:#FFAECC;	
