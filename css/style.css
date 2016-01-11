@@ -1095,7 +1095,7 @@
 
 		#banner > div > header > img{
 		
-			opacity: 0.4;
+			opacity: 0.8;
 		    filter: alpha(opacity=40); /* For IE8 and earlier */		
 		}
 
@@ -1185,7 +1185,7 @@ table a:hover
 	color:white;
 } 
 
-
+#banner > div > header > img
 
 
 .CS4615 /* Computer Systems Security */						
