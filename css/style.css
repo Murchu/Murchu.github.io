@@ -117,46 +117,46 @@
 		text-align: center;
 	}
 
-		header.special:before, header.special:after {
-			content: '';
-			height: 7px;
-			opacity: 0.1;
-			position: absolute;
-			top: 1.75em;
-			width: 43%;
-		}
+	header.special:before, header.special:after {
+		content: '';
+		height: 7px;
+		opacity: 0.1;
+		position: absolute;
+		top: 1.75em;
+		width: 43%;
+	}
 
-		header.special:before {
-			left: 0;
-		}
+	header.special:before {
+		left: 0;
+	}
 
-		header.special:after {
-			right: 0;
-		}
+	header.special:after {
+		right: 0;
+	}
 
-		header.special h2 {
-			margin-bottom: 0;
-		}
+	header.special h2 {
+		margin-bottom: 0;
+	}
 
-		header.special h2 + p {
-			margin-bottom: 0;
-			padding-top: 1.5em;
-		}
+	header.special h2 + p {
+		margin-bottom: 0;
+		padding-top: 1.5em;
+	}
 
-		header.special .icon {
-			cursor: default;
-			height: 7em;
-			left: 0;
-			position: absolute;
-			text-align: center;
-			top: 1em;
-			width: 100%;
-		}
+	header.special .icon {
+		cursor: default;
+		height: 7em;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		top: 1em;
+		width: 100%;
+	}
 
-			header.special .icon:before {
-				font-size: 3.5em;
-				opacity: 0.35;
-			}
+	header.special .icon:before {
+		font-size: 3.5em;
+		opacity: 0.35;
+	}
 
 	footer > :last-child {
 		margin-bottom: 0;
@@ -192,12 +192,12 @@
 		outline: 0;
 	}
 
-		input[type="text"]:focus,
-		input[type="password"]:focus,
-		input[type="email"]:focus,
-		textarea:focus {
-			border-color: #83d3c9;
-		}
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		border-color: #83d3c9;
+	}
 
 	input[type="text"],
 	input[type="password"],
@@ -512,13 +512,7 @@
 		text-transform: uppercase;
 	}
 
-		input[type="button"]:hover,
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		.button:hover {
-			background: rgba(188, 202, 206, 0.15);
-			border-color: inherit;
-		}
+		
 
 		input[type="button"].special,
 		input[type="submit"].special,
@@ -892,7 +886,7 @@
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/mnt1.jpg");
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/mnt.jpg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -1191,28 +1185,10 @@ table a:hover
 	color:white;
 } 
 
-
-#banner > div > footer > ul > li > a:before{
-
- content: "";
-  position: absolute;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-	width: 100%;
-}
-
-#banner > div > footer > ul > li > a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-
+#banner > div > footer > ul > li > a > img:hover
+{
+	width: 2.5em;
+	
 }
 
 .CS4615 /* Computer Systems Security */						
