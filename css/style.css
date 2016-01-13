@@ -498,7 +498,6 @@
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		background: none;
-		border: solid 1px;
 		color: inherit;
 		cursor: pointer;
 		display: inline-block;
@@ -1146,7 +1145,7 @@
     -moz-transition: opacity .5s ease-out;
     -webkit-transition: opacity .5s ease-out;
     -o-transition: opacity .5s ease-out;
-   
+
 }
 
 
@@ -1193,7 +1192,28 @@ table a:hover
 } 
 
 
+#banner > div > footer > ul > li > a:before{
 
+ content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+	width: 100%;
+}
+
+#banner > div > footer > ul > li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+
+}
 
 .CS4615 /* Computer Systems Security */						
 {	background-color:#FE938C;	}
