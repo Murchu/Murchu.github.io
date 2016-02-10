@@ -112,7 +112,7 @@
 
 	header.special {
 		margin-bottom: 5em;
-	
+
 		position: relative;
 		text-align: center;
 	}
@@ -306,7 +306,7 @@
 			}
 
 			.icon.circle.fa-twitter {
-				color: #70aecd;				
+				color: #70aecd;
 			}
 
 				.icon.circle.fa-twitter:hover {
@@ -314,7 +314,7 @@
 					background: #7fb7d2;
 				}
 
-			.icon.circle.fa-facebook {				
+			.icon.circle.fa-facebook {
 				color:  #7490c3;
 			}
 
@@ -333,7 +333,7 @@
 				}
 
 			.icon.circle.fa-instagram {
-				
+
 				color: #3f729b;
 			}
 
@@ -343,7 +343,7 @@
 				}
 
 			.icon.circle.fa-linkedin {
-				
+
 				color: #0976b4;
 			}
 
@@ -512,7 +512,7 @@
 		text-transform: uppercase;
 	}
 
-		
+
 
 		input[type="button"].special,
 		input[type="submit"].special,
@@ -723,56 +723,56 @@
 
 /* Dropotron */
 
-	.dropotron {
-		background: #fff;
-		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
-		line-height: 2.25em;
-		min-width: 11em;
-		padding: .5em 0;
-		text-transform: uppercase;
-		margin-top: calc(-1em + 1px);
-	}
+.dropotron {
+	background: #fff;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+	line-height: 2.25em;
+	min-width: 11em;
+	padding: .5em 0;
+	text-transform: uppercase;
+	margin-top: calc(-1em + 1px);
+}
 
-		.dropotron.level-0 {
-			font-size: 0.7em;
-			font-weight: 400;
-			margin-top: 1.5em;
-		}
+.dropotron.level-0 {
+	font-size: 0.7em;
+	font-weight: 400;
+	margin-top: 1.5em;
+}
 
-			.dropotron.level-0:before {
-				border-bottom: solid 0.5em #fff;
-				border-left: solid 0.5em transparent;
-				border-right: solid 0.5em transparent;
-				content: '';
-				left: 0.75em;
-				position: absolute;
-				top: -0.45em;
-			}
+.dropotron.level-0:before {
+	border-bottom: solid 0.5em #fff;
+	border-left: solid 0.5em transparent;
+	border-right: solid 0.5em transparent;
+	content: '';
+	left: 0.75em;
+	position: absolute;
+	top: -0.45em;
+}
 
-		.dropotron > li {
-			border-top: solid 1px rgba(124, 128, 129, 0.2);
-		}
+.dropotron > li {
+	border-top: solid 1px rgba(124, 128, 129, 0.2);
+}
 
-			.dropotron > li > a {
-				-moz-transition: none;
-				-webkit-transition: none;
-				-o-transition: none;
-				-ms-transition: none;
-				transition: none;
-				color: inherit;
-				text-decoration: none;
-				padding: 0 1em;
-				border: 0;
-			}
+.dropotron > li > a {
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	-ms-transition: none;
+	transition: none;
+	color: inherit;
+	text-decoration: none;
+	padding: 0 1em;
+	border: 0;
+}
 
-			.dropotron > li:hover > a {
-				background: #83d3c9;
-				color: white;
-			}
+.dropotron > li:hover > a {
+background: #83d3c9;
+color: white;
+}
 
-			.dropotron > li:first-child {
-				border-top: 0;
-			}
+.dropotron > li:first-child {
+border-top: 0;
+}
 
 /* Banner */
 	@-moz-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -784,7 +784,7 @@
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("cimages/light-bl.svg"), url("icmages/light-br.svg"), url("imagecs/overlay.png"), url("../images/mnt.jpg");
+		background-image: url("cimages/light-bl.svg"), url("icmages/light-br.svg"), url("imagecs/overlay.png"), url("../images/wind.jpg");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -794,67 +794,67 @@
 		text-align: center;
 	}
 
-		#banner .inner {
-			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
-			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-			-o-animation: reveal-banner 1s 0.25s ease-in-out;
-			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
-			animation: reveal-banner 1s 0.25s ease-in-out;
-			-moz-animation-fill-mode: forwards;
-			-webkit-animation-fill-mode: forwards;
-			-o-animation-fill-mode: forwards;
-			-ms-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;	
-			color: white;
-			display: inline-block;
-			opacity: 0;
-			text-align: center;
-		}
+	#banner .inner {
+		-moz-animation: reveal-banner 1s 0.25s ease-in-out;
+		-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+		-o-animation: reveal-banner 1s 0.25s ease-in-out;
+		-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+		animation: reveal-banner 1s 0.25s ease-in-out;
+		-moz-animation-fill-mode: forwards;
+		-webkit-animation-fill-mode: forwards;
+		-o-animation-fill-mode: forwards;
+		-ms-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+		color: white;
+		display: inline-block;
+		opacity: 0;
+		text-align: center;
+	}
 
-			#banner .inner header {
-				display: inline-block;
-				padding: 3px 0 3px 0;
-			}
+	#banner .inner header {
+		display: inline-block;
+		padding: 3px 0 3px 0;
+	}
 
-				#banner .inner header h2 {
-					-moz-animation: reveal-banner 1s 0.25s ease-in-out;
-					-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-					-o-animation: reveal-banner 1s 0.25s ease-in-out;
-					-ms-animation: reveal-banner 1s 0.25s ease-in-out;
-					animation: reveal-banner 1s 0.25s ease-in-out;
-					-moz-animation-fill-mode: forwards;
-					-webkit-animation-fill-mode: forwards;
-					-o-animation-fill-mode: forwards;
-					-ms-animation-fill-mode: forwards;
-					animation-fill-mode: forwards;
-					font-size: 2em;
-					font-weight: 100;
-					letter-spacing: 0.2em;
-					margin: 0;
-					position: relative;
-					text-transform: uppercase;
-				}
+	#banner .inner header h2 {
+		-moz-animation: reveal-banner 1s 0.25s ease-in-out;
+		-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+		-o-animation: reveal-banner 1s 0.25s ease-in-out;
+		-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+		animation: reveal-banner 1s 0.25s ease-in-out;
+		-moz-animation-fill-mode: forwards;
+		-webkit-animation-fill-mode: forwards;
+		-o-animation-fill-mode: forwards;
+		-ms-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+		font-size: 2em;
+		font-weight: 100;
+		letter-spacing: 0.2em;
+		margin: 0;
+		position: relative;
+		text-transform: uppercase;
+	}
 
-			#banner .inner p {
-				letter-spacing: 0.1em;
-				margin: 0;
-				text-transform: uppercase;
-			}
+	#banner .inner p {
+		letter-spacing: 0.1em;
+		margin: 0;
+		text-transform: uppercase;
+	}
 
-				#banner .inner p a {
-					color: inherit;
-					font-weight: 400;
-					text-decoration: none;
-				}
+	#banner .inner p a {
+	color: inherit;
+	font-weight: 400;
+	text-decoration: none;
+	}
 
-			#banner .inner footer {
-				margin: 2em 0 0 0;
-			}
+	#banner .inner footer {
+	margin: 2em 0 0 0;
+	}
 
-/* Main */
+/* Main
 
 	#main {
-		
+
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
 		background-size: 25em;
@@ -880,13 +880,15 @@
 	body.index #main {
 		padding-top: 4em;
 	}
+ main */
+
 
 /* CTA */
 
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/mnt.jpg");
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/wind.jpg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -896,42 +898,42 @@
 		text-align: center;
 	}
 
-		#cta header {
-			margin-bottom: 2em;
-		}
+	#cta header {
+		margin-bottom: 2em;
+	}
 
 /* Footer */
 
-	#footer {
-		background: #e8eef4;
-		color: #7c8081;
-		padding: 5em 5em 5em 5em;
-		text-align: center;
-	}
+#footer {
+	background: #e8eef4;
+	color: #7c8081;
+	padding: 5em 5em 5em 5em;
+	text-align: center;
+}
 
-		#footer .copyright {
-			font-size: 0.8em;
-			line-height: 1em;
-		}
+#footer .copyright {
+	font-size: 0.8em;
+	line-height: 1em;
+}
 
-			#footer .copyright a {
-				color: inherit;
-			}
+#footer .copyright a {
+	color: inherit;
+}
 
-			#footer .copyright li {
-				display: inline-block;
-				margin-left: 1em;
-				padding-left: 1em;
-				border-left: dotted 1px;
-			}
+#footer .copyright li {
+	display: inline-block;
+	margin-left: 1em;
+	padding-left: 1em;
+	border-left: dotted 1px;
+}
 
-				#footer .copyright li:first-child {
-					margin: 0;
-					padding: 0;
-					border: 0;
-				}
+#footer .copyright li:first-child {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 
-/* Layer */
+/* Layer
 
 	#topButton .toggle {
 		height: 100%;
@@ -1085,17 +1087,17 @@
 			display: inline-block;
 			width: 5em;
 		}
-
+Layer */
 		#banner > div > header > img{
-		
+
 			opacity: 0.8;
-		    filter: alpha(opacity=40); /* For IE8 and earlier */		
+		    filter: alpha(opacity=40); /* For IE8 and earlier */
 		}
 
 		#main > section.wrapper.style1.container.special > div > div > section:hover
 		{
-	  
-		    cursor: pointer;   
+
+		    cursor: pointer;
 
 		}
 
@@ -1110,7 +1112,7 @@
 		}
 		#main > header > img{
 			width: 15em;
-			margin-bottom: 5em:  
+			margin-bottom: 5em:
 		}
 
 
@@ -1125,8 +1127,8 @@
 }
 
 #main > section.wrapper.style1.container.special img{
-	
-	width: 90%; 
+
+	width: 90%;
 	padding-bottom: 1em;
 	padding-top: 2em;
 	opacity: 0.8;
@@ -1160,46 +1162,47 @@
 	margin-top: 100px;
 }
 
-#timetablediv p 
+#timetablediv p
 {
 	margin: 0px;
 }
 table th, td
 {
-	border: 1px solid #888888;	
-	vertical-align:text-center;	
+	border: 1px solid #888888;
+	vertical-align:text-center;
 	font-size:80%;
 }
 
-#timetablediv table 
-{	
+#timetablediv table
+{
 	color:black;
 }
 
-table a 
+table a
 {
 	color:black;
 }
-table a:hover 
+table a:hover
 {
 	color:white;
-} 
+}
 
 #banner > div > footer > ul > li > a > img:hover
 {
 	width: 2.5em;
-	
+
 }
 
-.CS4615 /* Computer Systems Security */						
+
+
+.CS4615 /* Computer Systems Security */
 {	background-color:#FE938C;	}
 
-.CS4403 /* Introduction to Embedded Systems*/							
+.CS4403 /* Introduction to Embedded Systems*/
 {	background-color: #C0B9DD;	}
 
-.CS4508 /* Software System Engineering */					
+.CS4508 /* Software System Engineering */
 {	background-color:#ACD79C; 	}
 
-.CS4093 /* Special Topics in Computing II */ 							
+.CS4093 /* Special Topics in Computing II */
 {	background-color:#75C9C8;	}
-
