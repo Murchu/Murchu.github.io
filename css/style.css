@@ -7,7 +7,7 @@
 */
 body, #skel-layers-wrapper
 {
-	background: #f3f6fa;
+	background: #e6e6e6;
 }
 
 body.is-loading *
@@ -603,7 +603,7 @@ header.special .icon
 
 	.wrapper
 	{
-		margin-bottom: 5em;
+		margin-top: 5em;
 		padding: 5em;
 	}
 
@@ -612,46 +612,6 @@ header.special .icon
 			padding: 0;
 		}
 
-		.wrapper.style2
-		{
-			background-color: #83d3c9;
-			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
-			background-position: bottom left, bottom right;
-			background-repeat: no-repeat, no-repeat;
-			background-size: 25em, 25em;
-			color: white;
-		}
-
-			.wrapper.style2 .button:hover
-			 {
-				background: rgba(255, 255, 255, 0.15) !important;
-			}
-
-			.wrapper.style2 .button.special
-			{
-				background: white;
-				border-color: white;
-				color: #83d3c9 !important;
-			}
-
-				.wrapper.style2 .button.special:hover
-				{
-					border-color: inherit !important;
-					color: white !important;
-				}
-
-		.wrapper.style3
-		{
-			background: white;
-			color: inherit;
-		}
-
-		.wrapper.style4
-		{
-			background: white;
-			color: inherit;
-			padding: 4em;
-		}
 
 /* Header */
 	@-moz-keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
@@ -1224,7 +1184,6 @@ Layer */
 {
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
 }
 
 #main > header > h2
@@ -1247,7 +1206,6 @@ Layer */
 	-moz-transition: opacity .5s ease-out;
 	-webkit-transition: opacity .5s ease-out;
 	-o-transition: opacity .5s ease-out;
-
 }
 
 
@@ -1317,4 +1275,9 @@ table a:hover
 .CS4093 /* Special Topics in Computing II */
 {
 	background-color:#75C9C8;
+}
+
+#main > section.wrapper.style1.container.special
+{
+
 }

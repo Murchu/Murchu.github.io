@@ -26,11 +26,7 @@
 			.container.\31 25\25 {
 				width: 100%;
 
-				/* max-width: (containers * 1.25) */
-				max-width: 1500px;
-
-				/* min-width: (containers) */
-				min-width: 1200px;
+	
 			}
 
 		/* 75% */
@@ -88,7 +84,7 @@
 
 			.row > * {
 				/* padding: (gutters.horizontal) 0 0 (gutters.vertical) */
-				padding: 40px 0 0 40px;
+				padding: 40px 0 0 0;
 			}
 
 			.row {
