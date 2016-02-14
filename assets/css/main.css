@@ -3,14 +3,19 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+	pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
+	 dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		text-decoration: none
 	}
+
+
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -348,24 +353,22 @@
 			width: 2.25em;
 		}
 
-			.icon.circle:hover {
-				top: -0.1em;
-			}
 
-			.icon.circle.fa-twitter {	color: #70aecd; }
-			.icon.circle.fa-twitter:hover { color: white; background: #7fb7d2; }
 
-			.icon.circle.fa-facebook {	color:  #7490c3; }
-			.icon.circle.fa-facebook:hover { background: #7490c3; color: white; }
+			.icon.circle.fa-twitter {	color: #7c8081; }
+			.icon.circle.fa-twitter:hover { color: #70aecd;  }
 
-			.icon.circle.fa-github { color: black; }
-			.icon.circle.fa-github:hover {	background: black;color: white; }
+			.icon.circle.fa-facebook {	color: #7c8081; }
+			.icon.circle.fa-facebook:hover { color:  #7490c3; }
 
-			.icon.circle.fa-instagram { color: #3f729b; }
-			.icon.circle.fa-instagram:hover {	background: #3f729b;color: white;  }
+			.icon.circle.fa-github {	color: #7c8081; }
+			.icon.circle.fa-github:hover {	color: black; }
 
-			.icon.circle.fa-linkedin { color: #0976b4; }
-			.icon.circle.fa-linkedin:hover { background: #0976b4; color: white; 	}
+			.icon.circle.fa-instagram {	color: #7c8081; }
+			.icon.circle.fa-instagram:hover {	color: #3f729b;  }
+
+			.icon.circle.fa-linkedin {	color: #7c8081; }
+			.icon.circle.fa-linkedin:hover { color: #0976b4; 	}
 
 		.icon.featured {
 			cursor: default;
@@ -923,7 +926,7 @@
 				margin: 2em 0 0 0;
 			}
 
-/* Main 
+/* Main
 
 	#main {
 		background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
@@ -1131,7 +1134,7 @@
 				}
 
 				.wrapper.style1 {
-				
+
 				}
 
 				.wrapper.style2 {
@@ -1571,7 +1574,7 @@
 				}
 
 				.wrapper.style1 {
-					
+
 				}
 
 				.wrapper.style2 {
@@ -1684,7 +1687,7 @@
 #main > section.wrapper.style1.container.special img:hover
 {
 	opacity: 1;
-	
+
 	transition: opacity .5s ease-out;
 	-moz-transition: opacity .5s ease-out;
 	-webkit-transition: opacity .5s ease-out;
@@ -1757,4 +1760,9 @@ table a:hover
 .CS4093 /* Special Topics in Computing II */
 {
 	background-color:#75C9C8;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+	 text-decoration: none; !important
 }
