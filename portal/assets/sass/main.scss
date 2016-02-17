@@ -586,6 +586,7 @@
 
 
 
+
 				header {
 					text-align: center;
 
@@ -607,7 +608,7 @@
 
 			display: inline-block;
 		}
-
+li {}
 			#footer {
 				text-align: center;
 				padding: 2em 0 0 0;
@@ -615,6 +616,7 @@
 				.copyright {
 					li {
 						display: inline-block;
+						list-style-type: none;
 
 						&:before {
 							display: none;
@@ -623,7 +625,4 @@
 				}
 			}
 
-	}
-section > figcaption{
-		text-align: center;
 	}
