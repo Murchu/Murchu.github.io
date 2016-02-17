@@ -57,7 +57,11 @@
 	}
 
 /* Grid */
-
+	.row figcaption{
+		margin-top: 5px;
+    text-align: center;
+}
+	}
 	.row {
 		border-bottom: solid 1px transparent;
 		-moz-box-sizing: border-box;
@@ -1341,7 +1345,7 @@
 				height: 20em;
 			}
 
-			
+
 
 				#me header {
 					position: absolute;
@@ -1517,6 +1521,10 @@
 
 		/* Footer */
 
+		figcaption.caption{
+			text-align: center;
+		}
+
 			#footer {
 				text-align: center;
 				padding: 2em 0 0 0;
@@ -1525,6 +1533,7 @@
 
 				#footer .copyright li {
 					display: block;
+					
 				}
 
 					#footer .copyright li:before {
