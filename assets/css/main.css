@@ -807,7 +807,7 @@ color:#00A0C6;
 				border-left: solid 0.5em transparent;
 				border-right: solid 0.5em transparent;
 				content: '';
-				left: 2em;
+				left: 0.75em;
 				position: absolute;
 				top: -0.45em;
 			}
