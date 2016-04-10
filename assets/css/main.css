@@ -1720,6 +1720,45 @@ color:#00A0C6;
 	margin-top: 100px;
 }
 
+#appdiv 
+{
+	
+	text-align:right;
+	margin-right:auto;
+	margin-left:auto;
+	width: 80%;
+	
+	margin-bottom: 25px;
+	margin-top: 150px;
+}
+.dlbutton {
+	
+	background-color:#70db70;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:24px 43px;
+	text-decoration:none;
+	
+}
+.dlbutton:hover {
+	background-color:#47d147;
+}
+.dlbutton:active {
+	position:relative;
+	top:1px;
+}
+
+#appdiv > div > div:nth-child(1) > h2{
+	padding-top: 60px;
+}
+
+
 #timetablediv p
 {
 	margin: 0px;
