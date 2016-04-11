@@ -1727,7 +1727,6 @@ color:#00A0C6;
 	margin-right:auto;
 	margin-left:auto;
 	width: 80%;
-	
 	margin-bottom: 25px;
 	margin-top: 150px;
 }
@@ -1742,7 +1741,7 @@ color:#00A0C6;
 	color:#ffffff;
 	font-family:Arial;
 	font-size:17px;
-	padding:24px 43px;
+	padding:10px 43px;
 	text-decoration:none;
 	
 }
@@ -1758,6 +1757,10 @@ color:#00A0C6;
 	padding-top: 60px;
 }
 
+#appdiv > div > div:nth-child(2) img{
+	 display:block;
+    margin:auto;
+}
 
 #timetablediv p
 {
