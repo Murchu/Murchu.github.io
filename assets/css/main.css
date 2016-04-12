@@ -1747,6 +1747,7 @@ color:#00A0C6;
 }
 .dlbutton:hover {
 	background-color:#47d147;
+	color:#ffffff;
 }
 .dlbutton:active {
 	position:relative;
