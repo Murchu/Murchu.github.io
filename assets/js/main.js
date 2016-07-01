@@ -76,12 +76,12 @@
 				)
 					.appendTo($body)
 					.panel({
-						delay: 500,
+						delay: 100,
 						hideOnClick: true,
 						hideOnSwipe: true,
 						resetScroll: true,
 						resetForms: true,
-						side: 'left',
+						side: 'right',
 						target: $body,
 						visibleClass: 'navPanel-visible'
 					});
