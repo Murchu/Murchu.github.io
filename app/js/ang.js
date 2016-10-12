@@ -14,12 +14,12 @@ var app = angular.module('tutorialWebApp', [
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
-    .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
+    .when("/", {templateUrl: "dist/partials/home.html", controller: "PageCtrl"})
     // Pages
-    .when("/portfolio", {templateUrl: "partials/portfolio.html", controller: "PageCtrl"})
-    .when("/projects", {templateUrl: "partials/projects.html", controller: "PageCtrl"})
+    .when("/portfolio", {templateUrl: "dist/partials/portfolio.html", controller: "PageCtrl"})
+    .when("/projects", {templateUrl: "dist/partials/projects.html", controller: "PageCtrl"})
     // else 404
-    .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
+    .otherwise("/404", {templateUrl: "dist/partials/404.html", controller: "PageCtrl"});
 }]);
 
 
@@ -37,11 +37,11 @@ var app = angular.module('portfolioCtrl', [
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
-    .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
+    .when("/", {templateUrl: "dist/partials/home.html", controller: "PageCtrl"})
     // Pages
-    .when("/portfolio", {templateUrl: "partials/portfolio.html", controller: "PageCtrl"})
+    .when("/portfolio", {templateUrl: "dist/partials/portfolio.html", controller: "PageCtrl"})
     // else 404
-    .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
+    .otherwise("/404", {templateUrl: "dist/partials/404.html", controller: "PageCtrl"});
 }]);
 
 

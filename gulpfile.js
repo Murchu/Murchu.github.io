@@ -14,7 +14,7 @@ var dist = {
  	js:  			'dist/js',
  	img: 			'dist/img',
  	svg: 			'dist/img/svg',
- 	html: 			'dist/',
+ 	html: 			'',
  	tempDest: 		'dist/templates',
  	partialDest: 	'dist/partials',
 };
@@ -127,13 +127,13 @@ gulp.task('browserSync', function() {
 
 	browserSync.init({
 		server: {
-			baseDir: 'dist'
+			baseDir: ''
 		}
 	});
 
 	gulp.watch( paths.sass, ['sass']);
 	gulp.watch( paths.html, ['htmlmin']);
-		gulp.watch( paths.partials, ['partialhtmlmin']);
+	gulp.watch( paths.partials, ['partialhtmlmin']);
 	gulp.watch( paths.templates, ['temphtmlmin']);
 	gulp.watch( paths.html, ['htmlmin']);
 	gulp.watch( paths.js, 	['scripts']);
