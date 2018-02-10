@@ -149,11 +149,12 @@ section.module.parallax-3 {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  color: green;
   /* Mozilla Firefox */
   /* Opera */
   /* Webkit (Safari/Chrome 10) */
   /* Webkit (Chrome 11+) */
-  background-image: linear-gradient(to right, #007B9A 0%, #389298 100%);
+  background-image: linear-gradient(to right, #f1f1f1 0%, #fafafa 100%);
   /*  Markup */
 }
 
@@ -163,7 +164,7 @@ section.module.parallax-3 {
 }
 
 .icon {
-  fill: #fafafa;
+  fill: #999999;
   opacity: 0.5;
 }
 

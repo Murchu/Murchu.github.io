@@ -182,11 +182,15 @@ section.module.parallax-3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: -moz-linear-gradient(left, #007B9A 0%, #389298 100%); /* Mozilla Firefox */ 
+    color: green;
+
+
+
+    background-image: -moz-linear-gradient(left, #f1f1f1 0%, #389298 100%); /* Mozilla Firefox */ 
     background-image: -o-linear-gradient(left, #007B9A 0%, #389298 100%);  /* Opera */ 
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #007B9A), color-stop(100, #389298));  /* Webkit (Safari/Chrome 10) */ 
     background-image: -webkit-linear-gradient(left, #007B9A 0%, #389298 100%);  /* Webkit (Chrome 11+) */ 
-    background-image: linear-gradient(to right, #007B9A 0%, #389298 100%);  /*  Markup */ 
+    background-image: linear-gradient(to right, #f1f1f1 0%, #fafafa 100%);  /*  Markup */ 
 
 }
 
@@ -196,7 +200,7 @@ section.module.parallax-3 {
 }
 
 .icon{
-    fill: #fafafa;
+    fill: #999999;
     opacity: 0.5;
 }
 // X Section  4  - Languages ---------------------------------- // 
