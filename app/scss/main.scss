@@ -30,7 +30,7 @@ section.module.bio p {
 // SEction 1 - clearfix header and items---------------------------------- // 
 .clearfix{	
   font-size: 1em;
-  height: 69px;
+  height: 125px;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -70,7 +70,9 @@ section.module.bio p {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  padding: 1.3em;
+  padding: 3em;
+  background-color: #fafafa;
+  opacity: 0.2;
 }
 
 ul.flex-container > li:nth-child(1){
