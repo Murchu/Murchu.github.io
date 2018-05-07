@@ -18,7 +18,7 @@ section.module.bio p {
 
 .clearfix {
   font-size: 1em;
-  height: 125px;
+  height: 100px;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -55,7 +55,7 @@ section.module.bio p {
   list-style: none;
   display: -ms-flexbox;
   display: flex;
-  padding: 3em;
+  padding: 2.3em;
   background-color: #fafafa;
   opacity: 0.2;
 }
@@ -307,4 +307,9 @@ a img {
   section.module.parallax h1 {
     font-size: 5.5em;
   }
+}
+
+#wrapper > header > div > ul > li:nth-child(1) > a > svg {
+  height: 40px;
+  opacity: 1;
 }
