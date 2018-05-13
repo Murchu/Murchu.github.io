@@ -1,5 +1,15 @@
 document.onreadystatechange = function () {
 
+
+// fade in divs
+var fadein = $('div.fadein');
+$.each(fadein, function(i, item) {
+	setTimeout(function() {
+		$(item).fadeIn(1000); // duration of fadein
+	}, 1000 * i); // duration between fadeins
+});​
+
+
 	enquire.register("screen and (min-width: 951px)", { 
 
 		match : function() {

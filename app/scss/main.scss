@@ -1,183 +1,172 @@
-$generalHighlight:    #007B9A;
-$snow:                #fafafa;
-$languageBar:         #389298;
-$bgFoot:              #6d665e; 
+$generalHighlight : #087;
+$snow : #fafafa;
+$bgFoot : #6d665e;
+$Banner: #fafafa;
 
+
+/* Clearfix ----------------------------------*/
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 
-// Sections ---------------------------------- // 
+.clearfix {
+    font-size: 1em;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
 
+.clearfix.active {
+    background: $snow;
+    filter: alpha(opacity=50);
+    /* internet explorer */
+    -khtml-opacity: 0.5;
+    /* khtml, old safari */
+    -moz-opacity: 0.5;
+    /* mozilla, netscape */
+    opacity: 0.9;
+    /* fx, safari, opera */
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+/*Sections ----------------------------------*/
 section.module h2 {
-  font-size: 1.2em;
-  margin-bottom: 1.5em;
-  margin-top: 3em;
-  font-weight: 300;
-  letter-spacing: 0.2em;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    margin-top: 3em;
+    font-weight: 300;
+    letter-spacing: 0.2em;
 }
+
 section.module.bio p {
- 
-  // font-size: 1.5em;
+  font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 0.1em;
   margin-bottom: 1.5em;
 }
 
-// Sections ---------------------------------- // 
-
-// SEction 1 - clearfix header and items---------------------------------- // 
-.clearfix{	
-  font-size: 1em;
-  height: 100px;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  transition: all 0.2s ease-in-out;
-}
-
-.clearfix.active{
-  background: $snow;
-  filter: alpha(opacity=50); /* internet explorer */
-    -khtml-opacity: 0.5;      /* khtml, old safari */
-    -moz-opacity: 0.5;       /* mozilla, netscape */
-    opacity: 0.9;           /* fx, safari, opera */
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-
-}
-
-#menu-icon, #home{
-  cursor: pointer;
-  color:   $snow;
-
-}
-
-#murchu{
-  color: $generalHighlight;
-  visibility:hidden;
-  text-transform: uppercase;
-  margin-top: 0px;
-}
-
-.flex-container {
-  width: 100%;
-  list-style: none;  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  padding: 2.3em;
-  background-color: #fafafa;
-  opacity: 0.2;
-}
-
-ul.flex-container > li:nth-child(1){
-  text-align: left;
-  width: 33%;
-}
-
-ul.flex-container > li:nth-child(2){
-  
-  text-align: center;
-    width: 33%;
-}
-
-ul.flex-container > li:nth-child(3){
-  text-align: right;
-
-    width: 33%;
-}
-
-#wrapper > header > div > ul > li{
-  width: 100%;
-}
-
-// XXXXXXXXXXX   Section 1 - clearfix header and items---------------------------------- // 
-
-// SEction  2  - Parallax 1 ---------------------------------- // 
-
 section.module.parallax h1 {
-  color: white;
-  font-size: 2em;
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-
+    color: white;
+    font-size: 2em;    
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 section.module.parallax-1 {
     background-image: url("../img/inchy.png");
-    background-size: 100%;  
+    background-size: 100%;
     padding: 10em 0;
-    background-repeat: no-repeat;                                                                                  
+    background-repeat: no-repeat;
 }
+
 section.module.parallax-2 {
     background-image: url("../img/dev.jpg");
-    background-size: 100%;  
-    padding: 5em 0;                                                                                  
+    background-size: 100%;
+    padding: 5em 0;
 }
 
 section.module.parallax-3 {
     background-image: url("../img/projects.jpeg");
-    background-size: 100%;  
-    padding: 5em 0;                                                                                  
+    background-size: 100%;
+    padding: 5em 0;
+}
+#menu-icon,
+#home {
+    cursor: pointer;
 }
 
-#keyb{
-  width: 100%;
+#murchu {
+    color: $generalHighlight;
+    visibility: hidden;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.flex-container { 
+    
+    width: 100%;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 2.3em;  
+    opacity: 1;
+}
+
+ul.flex-container>li:nth-child(1) {
+    text-align: left;
+    width: 33%;
+}
+
+ul.flex-container>li:nth-child(2) {
+    text-align: right;
+    width: 33%;
+}
+
+#wrapper>header>div>ul>li {
+    width: 100%;
+}
+
+
+
+
+#keyb {
+    width: 100%;
 }
 
 .myButton {
-  background-color:#44c767;
-  -moz-border-radius:42px;
-  -webkit-border-radius:42px;
-  border-radius:42px;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-size:17px;
-  padding:9px 76px;
-  text-decoration:none;
+    background-color: #44c767;
+    -moz-border-radius: 42px;
+    -webkit-border-radius: 42px;
+    border-radius: 42px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 9px 76px;
+    text-decoration: none;
+}
 
-}
 .myButton:hover {
-  background-color:#5cbf2a;
-    text-decoration:none;
+    background-color: #5cbf2a;
+    text-decoration: none;
 }
+
 .myButton:active {
-  position:relative;
-  top:1px;
+    position: relative;
+    top: 1px;
 }
 
 
 // SEction  2  - Parallax 1 ---------------------------------- //
-
-
 // Section  3  - Bio ---------------------------------- // 
-.bio{
+.bio {
     width: 80%;
     margin: auto;
     text-align: center;
 }
 
-.upper{
+.upper {
     text-transform: uppercase;
 }
 
 // X Section  3  - Bio ---------------------------------- // 
-
 // Section  4  - Languages ------------------------------- //
 .languagesFlex {
     width: 100%;
     height: 120px;
-    list-style: none;  
+    list-style: none;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -185,56 +174,40 @@ section.module.parallax-3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: green;
-
-
-
-    background-image: -moz-linear-gradient(left, #f1f1f1 0%, #389298 100%); /* Mozilla Firefox */ 
-    background-image: -o-linear-gradient(left, #007B9A 0%, #389298 100%);  /* Opera */ 
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #007B9A), color-stop(100, #389298));  /* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-linear-gradient(left, #007B9A 0%, #389298 100%);  /* Webkit (Chrome 11+) */ 
-    background-image: linear-gradient(to right, #f1f1f1 0%, #fafafa 100%);  /*  Markup */ 
-
 }
 
-.languages svg{
-    height: 100px;   
+.languages svg {
+    height: 100px;
     padding: 2em;
 }
 
-.icon{
+.icon {
     fill: #999999;
     opacity: 0.5;
 }
+
 // X Section  4  - Languages ---------------------------------- // 
-
 //  Section  5  - Tabs  ---------------------------------- // 
-.tabs{
-    width: 80%;
-    margin: auto;
-    margin-top: 5em; 
-
-}
 
 
-.boxes{
-    margin-bottom: 5em;
-    margin-top: 2em;
-}
 
 
-, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-.boxes img {
-    width: 100em;
+,
+
+
+.boxes {
     background-color: #fafafa;
-     
-    
+}
+.boxes img{
+    width: 60%;
+    display:block;
+    margin:auto;
+    padding: 7em;
+
 }
 
-.boxes{
-   margin: 0px auto;
-}
+
 a {
     text-decoration: none;
     outline: none;
@@ -244,145 +217,101 @@ a img {
     border: none;
 }
 
-.caption {
-  display: inline-block;
-  position: relative;
-  margin: 10px;
-}
 
-.caption img {
-
-  max-width: 100%;
-}
-
-.caption::before,
-.caption::after {
-  font-size: 1.5em;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  color: #fafafa;
-  text-align: center;
-  padding: 1em;
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-
-.caption::before {
-  content: attr(data-title);
-  bottom: 1%; 
-  background-image: -moz-linear-gradient(left, #007B9A 0%, #389298 100%); /* Mozilla Firefox */ 
-  background-image: -o-linear-gradient(left, #007B9A 0%, #389298 100%);  /* Opera */ 
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #007B9A), color-stop(100, #389298));  /* Webkit (Safari/Chrome 10) */ 
-  background-image: -webkit-linear-gradient(left, #007B9A 0%, #389298 100%);  /* Webkit (Chrome 11+) */ 
-  background-image: linear-gradient(to right, #007B9A 0%, #389298 100%);  /*  Markup */ 
-  // font-size: 2.5em;
-  font-weight: 300;
-}
-
-.caption:hover::before,
-.caption:hover::after {
-  opacity: 1;
-
-}
 
 
 // X Section  5  - Figures ---------------------------------- // 
+//  Section  6  - Footer ---------------------------------- // 
+.foot {
+    background-image: -moz-linear-gradient(left, #007B9A 0%, #389298 100%);
+    /* Mozilla Firefox */
+    background-image: -o-linear-gradient(left, #007B9A 0%, #389298 100%);
+    /* Opera */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #007B9A), color-stop(100, #389298));
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-linear-gradient(left, #007B9A 0%, #389298 100%);
+    /* Webkit (Chrome 11+) */
+    background-image: linear-gradient(to right, #007B9A 0%, #389298 100%);
+    /*  Markup */
+    margin-top: 5em;
+}
+
+.foot p {
+    padding: 5em;
+    color: #fafafa;
+    text-align: center;
+
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.foot a {
+    text-decoration: none;
+    color: $snow;
+}
+
+.foot a:hover {
+    text-decoration: none;
+    color: black;
+}
 
 //  Section  6  - Footer ---------------------------------- // 
+.boxes p {
 
-
-.foot{
-  background-image: -moz-linear-gradient(left, #007B9A 0%, #389298 100%); /* Mozilla Firefox */ 
-  background-image: -o-linear-gradient(left, #007B9A 0%, #389298 100%);  /* Opera */ 
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #007B9A), color-stop(100, #389298));  /* Webkit (Safari/Chrome 10) */ 
-  background-image: -webkit-linear-gradient(left, #007B9A 0%, #389298 100%);  /* Webkit (Chrome 11+) */ 
-  background-image: linear-gradient(to right, #007B9A 0%, #389298 100%);  /*  Markup */ 
-  margin-top: 5em;
+    margin-top: 3em;
+    ;
 }
 
-.foot p{
-  padding: 5em;
-  color: #fafafa;
-  text-align: center;
-
-  font-weight: 300;
-  letter-spacing: 0.1em;
-}
-.foot a{
-  text-decoration: none;
-  color: $snow;
+.boxes p img {
+    width: 8em;
 }
 
-.foot a:hover{
-  text-decoration: none;
-  color: black;
-}
-//  Section  6  - Footer ---------------------------------- // 
-
-
-.boxes p{
-
-margin-top: 3em;;
+.boxes {
+    line-height: 2;
 }
 
-.boxes p img{
-  width: 8em;
-}
-
-.boxes{
-  line-height: 2;
-}
-
-.portfolio .row{
-  padding-bottom: 8em;
+.portfolio .row {
+    padding-bottom: 8em;
 }
 
 
 @media screen and (min-width: 48em) {
     section.module.parallax h1 {
-      font-size: 3.5em;
+        font-size: 3.5em;
     }
 
-    section.module.parallax-1 {   
-      background-size: 100%;  
-      padding: 12em 0;    
+    section.module.parallax-1 {
+        background-size: 100%;
+        padding: 12em 0;
     }
 
     section.module h2 {
-      font-size: 1.5em;
-     }
-
-    .upper{
-      text-transform: lowercase;
+        font-size: 1.5em;
     }
 
+    .upper {
+        text-transform: lowercase;
+    }
 }
 
 
 @media screen and (min-width: 58em) {
     section.module.parallax h1 {
-      font-size: 5.5em;
-
+        font-size: 5.5em;
     }
-
-
 }
 
-#wrapper > header > div > ul > li:nth-child(1) > a > svg{
-  height: 40px;
-  opacity: 1;
+#wrapper>header>div>ul>li:nth-child(1)>a>svg {
+    height: 40px;
+    opacity: 1;
 }
+
 
 
 // @media screen and (max-width: 600px) {
 //   section.module h2 {
- 
-
 //   }
 //   section.module p {
-  
 //   }
 //   section.module.parallax {
 //     padding: 10px 0;
@@ -393,34 +322,19 @@ margin-top: 3em;;
 //     -moz-transition: all 0.3s ease;
 //     transition: all 0.3s ease;
 //   }
-
-
-
 // }
-
-
-
 // @media screen and (min-width: 800px) {
 //   section.module h2 {
-  
-
 //   }
 //   section.module p {
-   
 //   }
 //   section.module.parallax {
 //     padding: 10px 0;
 //   }
 //   section.module.parallax h1 {
-
 //     padding: 200px 0;
 //       -webkit-transition: all 0.3s ease;
 //       -moz-transition: all 0.3s ease;
 //       transition: all 0.3s ease;
 //   }
-
 // }
-
-
-
-

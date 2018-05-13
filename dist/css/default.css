@@ -39,10 +39,6 @@ ol, ul {
   list-style: none;
 }
 
-strong {
-  font-weight: 700;
-}
-
 body, html {
   font-size: 100%;
   padding: 0;
