@@ -1,0 +1,26 @@
+{
+  "name": "Murchu.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Murchu/Murchu.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Murchu/Murchu.github.io/issues"
+  },
+  "homepage": "https://github.com/Murchu/Murchu.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "tailwind": "^4.0.0",
+    "vite": "^2.0.1"
+  }
+}
