@@ -22,5 +22,8 @@
     "postcss": "^8.2.6",
     "tailwind": "^4.0.0",
     "vite": "^2.0.1"
+  },
+  "dependencies": {
+    "url-parse": "^1.5.1"
   }
 }
