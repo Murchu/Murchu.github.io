@@ -1,29 +1,25 @@
 {
-  "name": "Murchu.github.io",
+  "name": "up-and-running",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Murchu/Murchu.github.io.git"
+    "dev": "vite",
+    "build": "vite build",
+    "public": "vite build --base=/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Murchu/Murchu.github.io/issues"
-  },
-  "homepage": "https://github.com/Murchu/Murchu.github.io#readme",
   "devDependencies": {
-    "autoprefixer": "^10.2.4",
-    "postcss": "^8.2.6",
-    "tailwind": "^4.0.0",
-    "vite": "^2.0.1"
+    "@vitejs/plugin-react-refresh": "^1.1.3",
+    "autoprefixer": "^10.2.3",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2",
+    "vite": "^2.0.0-beta.50"
   },
   "dependencies": {
-    "url-parse": "^1.5.1"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
