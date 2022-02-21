@@ -1,15 +1,11 @@
 module.exports = {
-  purge: {
-    content: ["./src/**/*.jsx", "./index.html"],
-  },
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './dist/*.html'
+  ],
   theme: {
     extend: {},
   },
-  variants: {
-    extend: {
-      backgroundColor: ["active"],
-    },
-  },
-  plugins: [],
-};
+  plugins: [
+    require('@tailwindcss/typography')
+  ]
+}
