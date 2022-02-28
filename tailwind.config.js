@@ -3,8 +3,12 @@ module.exports = {
     './*.html'
   ],
   theme: {
-    extend: {},
-  },
+    extend: {
+      fontFamily: {
+       MyFont: ["Open Sans", "sans-serif"],
+      },
+    },
+  }, 
   plugins: [
     require('@tailwindcss/typography')
   ]
