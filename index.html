@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Colm Murphy</title>
+    <title>Colm Murphy | Home </title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="./dist/css/styles.css" />
     <style>
@@ -17,7 +17,7 @@
     </style>
 </head>
 
-<body class="">
+<body class="font-MyFont">
 
     <nav class="flex justify-between px-6 py-8 mx-auto sm:max-w-screen-xl sm:mx-auto bg-white">
         <a href="https://www.iamcolm.com/">
@@ -71,11 +71,14 @@
                 </div>
     </nav>
 
+  
+
+    <div class="mt-4 font-light text-stone-700 leading-loose sm:max-w-screen-xl sm:mx-auto">
 
 
-    <div class="mt-4 font-light text-gray-500 leading-loose sm:max-w-screen-xl sm:mx-auto">
 
-        <h1 class="px-6 py-4 text-3xl font-MyFont font-bold sm:text-4xl">
+
+        <h1 class="px-6 py-4 text-3xl font-bold sm:text-4xl">
             Hello, <span class="p-2 bg-teal-100">I am Colm,</span>
         </h1>
 
@@ -88,17 +91,89 @@
 
 
         <h2 class="px-6 mt-10 uppercase text-sm text-gray-400">Recent Work</h2>
-       <div class="px-6">
+   
+        <!-- Enterprise Design LG-->
+        <div class="px-6 hidden md:block">
+            <div class="bg-teal-100 rounded-xl">
+                <div class="mt-8 grid grid-cols-2">
+                    <div>
+                        <img class="rounded-xl sm:w-full sm:object object-center" src="src/img/index/ED-LG.png"
+                        alt="Enterprise Design" />
+                    </div>    
+                    <div class="m-auto">                
+                        <p class="text-2xl sm:text-4xl">
+                            Enterprise <span class="font-semibold">Design</span>
+                        </p>                            
+                        <h2 class="mt-2">Interface Redesign</h2>
+                        <a href="ET.html">
+                            <button class="mt-6 p-2 font-semibold text-sm text-white bg-teal-600 hover:bg-teal-700 hover:shadow-md px-4 border-none rounded">
+                                Show More
+                            </button>
+                        </a>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="bg-cyan-100 rounded-xl">
+                <div class="mt-8 grid grid-cols-2">
+                    <div>
+                        <img class="rounded-xl sm:w-full sm:object object-center" src="src/img/index/NAD-LG.png"
+                        alt="Enterprise Design" />
+                    </div>    
+                    <div class="m-auto">                
+                        <p class="text-2xl sm:text-4xl">
+                            Native App <span class="font-semibold">Design</span>
+                        </p>                            
+                        <h2 class="mt-2">Companion Apps Built Natively</h2>
+                        <a href="native.html">
+                            <button class="mt-6 p-2 font-semibold text-sm text-white bg-cyan-600 hover:bg-cyan-700 hover:shadow-md px-4 border-none rounded">
+                                Show More
+                            </button>
+                        </a>
+                    </div>  
+                </div>
+            </div>   
+
+            <div class="bg-indigo-100 rounded-xl">
+                <div class="mt-8 grid grid-cols-2">
+                    <div>
+                        <img class="rounded-xl sm:w-full sm:object object-center" src="src/img/index/PD-LG.png"
+                        alt="Enterprise Design" />
+                    </div>    
+                    <div class="m-auto">                
+                        <p class="text-2xl sm:text-4xl">
+                            Process <span class="font-semibold">Design</span>
+                        </p>                            
+                        <h2 class="mt-2">A Brief Note On Process</h2>
+                        <a href="process.html">
+                        <button class="mt-6 p-2 font-semibold text-sm text-white bg-indigo-600 hover:bg-indigo-700 hover:shadow-md px-4 border-none rounded">
+                            Show More
+                        </button>
+                    </a> 
+                    </div>  
+                </div>
+            </div>   
+        </div>
+       
+
+
+
+
+
+
+
+
+        <div class="px-6 md:hidden"> 
             <a href="ET.html">
-                <img class="mt-8 rounded-xl sm:w-full sm:object object-center" src="src/img/portfolio-01-min.png"
+                <img class="bg-teal-100 mt-8 rounded-xl sm:w-full sm:object object-center" src="src/img/index/ED-SM.png"
                     alt="Enterprise Design" />
             </a>
             <a href="native.html">
-                <img class="mt-8 rounded-xl sm:w-full sm:object object-center" src="src/img/portfolio-02-min.png"
+                <img class="bg-cyan-100 mt-8 rounded-xl sm:w-full sm:object object-center" src="src/img/index/NAD-SM.png"
                     alt="Native Design" />
             </a>
             <a href="process.html">
-                <img class="mt-8 rounded-xl sm:w-full sm:object object-center" src="src/img/portfolio-03-min.png"
+                <img class="bg-indigo-100 mt-8 rounded-xl sm:w-full sm:object object-center" src="src/img/index/PD-SM.png"
                     alt="Process Design" />
             </a>
 
