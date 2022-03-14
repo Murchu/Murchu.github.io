@@ -7,5 +7,5 @@
 
 
 .paragraphHeading {
-    @apply font-MyFont px-6 pt-10 font-semibold text-2xl text-cyan-500;
+    @apply font-MyFont px-6 pt-10 font-semibold text-2xl text-slate-400;
 }
