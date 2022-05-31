@@ -857,6 +857,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .uppercase{
   text-transform: uppercase;
 }
+.italic{
+  font-style: italic;
+}
 .leading-5{
   line-height: 1.25rem;
 }
@@ -894,6 +897,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-cyan-500{
   --tw-text-opacity: 1;
   color: rgb(6 182 212 / var(--tw-text-opacity));
+}
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+.text-emerald-500{
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity));
+}
+.text-emerald-700{
+  --tw-text-opacity: 1;
+  color: rgb(4 120 87 / var(--tw-text-opacity));
+}
+.text-indigo-700{
+  --tw-text-opacity: 1;
+  color: rgb(67 56 202 / var(--tw-text-opacity));
 }
 .text-opacity-25{
   --tw-text-opacity: 0.25;
