@@ -871,6 +871,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-opacity-25{
   --tw-text-opacity: 0.25;
 }
+.text-opacity-75{
+  --tw-text-opacity: 0.75;
+}
 .opacity-0{
   opacity: 0;
 }
