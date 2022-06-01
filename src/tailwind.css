@@ -7,7 +7,7 @@
 
 
 .paragraphHeading {
-    @apply font-MyFont font-semibold text-2xl  text-slate-400;
+    @apply font-MyFont font-semibold text-2xl text-slate-400;
 }
 
 .sectionFrame {
