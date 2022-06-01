@@ -7,5 +7,28 @@
 
 
 .paragraphHeading {
-    @apply font-MyFont px-6 pt-10 font-semibold text-2xl text-slate-400;
+    @apply font-MyFont font-semibold text-2xl  text-slate-400;
+}
+
+.sectionFrame {
+    @apply w-full;
+}
+
+.sectionFrameOn {
+    @apply w-full bg-teal-50;
+}
+
+.sectionDiv{
+    @apply p-6 pt-10 max-w-screen-xl m-auto;
+}
+.gradient {
+    @apply w-full bg-gradient-to-b from-amber-50  ;
+}
+
+.pageWidth{
+    @apply mb-6 sm:w-4/5 m-auto;
+}
+
+.horizontalRule {
+    @apply mt-4 w-20 h-1;
 }
