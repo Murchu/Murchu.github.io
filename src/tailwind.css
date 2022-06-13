@@ -32,3 +32,7 @@
 .horizontalRule {
     @apply mt-4 w-20 h-1;
 }
+
+.mailTo {
+    @apply bg-cyan-400;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,192 +15,184 @@
             visibility: visible;
         }
     </style>
-</head>
+    </head>
 
-<body class="">
+    <body class="font-MyFont">
 
-    <!--Navigation Bar-->
-    <nav class="flex justify-between px-6 py-8 mx-auto sm:max-w-screen-xl sm:mx-auto bg-white">
-        <a href="https://www.iamcolm.com/">
-            <div>
-                <img class="h-6" src="src/img/logo.svg" alt="logo" />
+        <!--Navigation Bar-->
+        <nav class="flex justify-between px-6 py-8 mx-auto sm:max-w-screen-xl sm:mx-auto bg-white">
+            <a href="https://www.iamcolm.com/">
+                <div>
+                    <img class="h-6" src="src/img/logo.svg" alt="logo" />
+                </div>
+            </a>
+            <div class="hidden text-gray-500 font-normal space-x-8 lg:flex">
+                <a class="hover:text-teal-700" href="index.html">Home</a>
+                <a class="hover:text-teal-700" href="src/Colm_Murphy_CV.pdf">About</a>
+                <a class="hover:text-teal-700" href="process.html">Process</a>
             </div>
-        </a>
-        <div class="hidden text-gray-500 font-normal space-x-8 lg:flex">
-            <a class="hover:text-teal-700" href="index.html">Home</a>
-            <a class="hover:text-teal-700" href="src/Colm_Murphy_CV.pdf">About</a>
-            <a class="hover:text-teal-700" href="process.html">Process</a>
-        </div>
-        <div class="flex lg:hidden">
-            <div class=" bg-white flex flex-col justify-center ">
-                <div class="flex items-center justify-center ">
-                    <div class=" relative inline-block text-left dropdown">
-                        <span class="rounded-md shadow-sm"><button
-                                class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
-                                type="button" aria-haspopup="true" aria-expanded="true"
-                                aria-controls="headlessui-menu-items-117">
-                                <span>More</span>
-                                <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button></span>
-                        <div
-                            class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
-                            <div class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-                                aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
-                                <a href="index.html">
+            <div class="flex lg:hidden">
+                <div class=" bg-white flex flex-col justify-center ">
+                    <div class="flex items-center justify-center ">
+                        <div class=" relative inline-block text-left dropdown">
+                            <span class="rounded-md shadow-sm"><button
+                                    class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                                    type="button" aria-haspopup="true" aria-expanded="true"
+                                    aria-controls="headlessui-menu-items-117">
+                                    <span>More</span>
+                                    <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button></span>
+                            <div
+                                class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+                                <div class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                                    aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
+                                    <a href="index.html">
+                                        <div class="px-4 py-3">
+                                            <p class="text-sm leading-5">Home</p>
+                                        </div>
+                                    </a>
                                     <div class="px-4 py-3">
-                                        <p class="text-sm leading-5">Home</p>
+                                        <a href="src/Colm_Murphy_CV.pdf">
+                                            <p class="text-sm leading-5">About</p>
                                     </div>
-                                </a>
-                                <div class="px-4 py-3">
-                                    <a href="src/Colm_Murphy_CV.pdf">
-                                        <p class="text-sm leading-5">About</p>
+                                    </a>
+                                    <a href="process.html">
+                                        <div class="px-4 py-3">
+                                            <p class="text-sm leading-5">Process</p>
+                                        </div>
+                                    </a>
                                 </div>
-                                </a>
-                                <a href="process.html">
-                                    <div class="px-4 py-3">
-                                        <p class="text-sm leading-5">Process</p>
-                                    </div>
-                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-    </nav>
+        </nav>
 
+        <!--Main Content-->
+        <div class="m-auto font-light text-slate-600 leading-loose">
 
-    <div class="m-auto font-light text-slate-600 leading-loose">
-
-        <div class="sectionFrame">
-            <div class="sectionDiv">
-                <div class="pageWidth">
-                    <h1 class="mb-6 font-MyFont font-bold text-xl sm:text-4xl ">
-                        Native App
-                    </h1>
-                    <hr class="mb-4 w-20 h-1 bg-red-500">
-                    <p class="">
-                        Access PeopleXD Native App
-                    </p>
+            <div class="sectionFrame">
+                <div class="sectionDiv">
+                    <div class="pageWidth">
+                        <h1 class="mb-6 font-MyFont font-bold text-xl sm:text-4xl ">
+                            Native App
+                        </h1>
+                        <hr class="mb-4 w-20 h-1 bg-red-500">
+                        <p class="">
+                            Access PeopleXD Native App
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-
-        <div class="sectionFrame ">
-            <div class="sectionDiv">
-                <div class="pageWidth">
-                    <img class="rounded-xl w-full object-center" src="src/img/native.png" alt="Enterprise Design" />
+            <div class="sectionFrame ">
+                <div class="sectionDiv">
+                    <div class="pageWidth">
+                        <img class="rounded-xl w-full object-center" src="src/img/native.png" alt="Enterprise Design" />
+                    </div>
                 </div>
             </div>
-        </div>
-  
-     
-        <div class="sectionFrame">
-            <div class="sectionDiv">
-                <div class="pageWidth">
-                    <h2 class="paragraphHeading">Background</h2>
-                    <hr class="horizontalRule bg-red-500">
-                    <p class="py-2">
-                        The Access People XD native app is an <span class="font-medium"> Employee & Manager Self Service</span>
-                        set of apps in iOS and Android aim at the employee & manager end of the Desktop Application. 
-                        Initially this was a CoreHR application which was rebranded to fit a wider Access suite of native apps.
-                    </p>                   
-                </div>
-            </div>
-        </div>
-  
-        <div class="sectionFrameOn">
-            <div class="sectionDiv">
-                <div class="pageWidth">
-                    <h2 class="paragraphHeading">Key Challenges of Native Design</h2>
-                    <hr class="horizontalRule bg-red-500">
-                    <p class="py-2">
-                        <ul class="pl-10 mt-6 list-disc">
-                            <li class="pb-6"><span class="font-bold ">Target</span> - Establishing an audience for a HR
-                                companion app is challenging
-                                and requires targeted research. It was also important to define the key aspects which would
-                                be most beneficial for managers, approvals etc. It was a priority to keep the app light touch as
-                                well</li>
-                            <li class="pb-6"><span class="font-bold ">Integration</span> - Since we were adding an app to an
-                                existing suite of apps, it required a lot of A/B and wireframing to define what was secure yet
-                                seamless.</li>
-                            <li class="pb-6"><span class="font-bold ">Customization</span> - The desktop version allows for a
-                                considerable amount of customer theming. We had to outline ways to brand the product while
-                                retaining the native and familiar
-                                aspects. </li>
-                            <li class="pb-6"><span class="font-bold ">Design Systems</span> - As with the Desktop version, a
-                                Design system for both
-                                iOS and Android was implemented and enforced. There is no need to reinvent the wheel
-                                when it comes to native apps.
-                                See <a class="text-cyan-500" href="https://lawsofux.com/jakobs-law/">Jakob's Law</a></li>
-                        </ul>
-                    </p>                   
-                </div>
-            </div>
-        </div>
-  
-
-        <div class="sectionFrame">
-            <div class="sectionDiv">
-                <div class="pageWidth">
-                    <img class="rounded-xl w-full object-center" src="src/img/designProcess.jpeg" alt="Enterprise Design" />
-                </div>
-            </div>
-        </div>
-
-
-        <div class="sectionFrameOn">
-            <div class="sectionDiv">
-                <div class="pageWidth">
-                    <h2 class="paragraphHeading">Design Process</h2>
-                    <hr class="horizontalRule bg-red-500">
-                    <p class="py-2">
-                        Just as with the Desktop version, We went through many iterations of improvised design processes and
-                        came to a conclusion. There is no one size fits all solution, we settled on a simplified version of the below
-                        diagram.
-                    </p>    
-                    <p class="py-2">
-                        The overall size of the native app is considerably smaller so it is somewhat easier to map user flows.
-                    </p>                  
-                </div>
-            </div>
-        </div>
-   
-
-        <div class="sectionFrame">
-            <div class="sectionDiv">
-                <div class="pageWidth">
-                    <h2 class="paragraphHeading">Some Concept Examples</h2>
-                    <hr class="horizontalRule bg-red-500">
-                    <h2 class="px-6 mt-10 uppercase text-sm text-gray-400">Profile</h2>
-                    <img class="mt-8 rounded-xl sm:w-full sm:object object-center" src="src/img/N1.png" alt="Workforce Managment" />
         
-                    <h2 class="mt-10 uppercase text-sm text-gray-400">Pay</h2>
-                    <img class="mt-8 rounded-xl sm:w-full sm:object object-center"  src="src/img/N2.png" alt="Workforce Managment" />
-        
-                    <h2 class="mt-10 uppercase text-sm text-gray-400">Design System</h2>
-                    <img class="mt-8 rounded-xl sm:w-full sm:object object-center"  src="src/img/N3.png" alt="Workforce Managment" />
+            <div class="sectionFrame">
+                <div class="sectionDiv">
+                    <div class="pageWidth">
+                        <h2 class="paragraphHeading">Background</h2>
+                        <hr class="horizontalRule bg-red-500">
+                        <p class="py-2">
+                            The Access People XD native app is an <span class="font-medium"> Employee & Manager Self Service</span>
+                            set of apps in iOS and Android aim at the employee & manager end of the Desktop Application. 
+                            Initially this was a CoreHR application which was rebranded to fit a wider Access suite of native apps.
+                        </p>                   
+                    </div>
                 </div>
             </div>
-        </div>
 
+            <div class="sectionFrameOn">
+                <div class="sectionDiv">
+                    <div class="pageWidth">
+                        <h2 class="paragraphHeading">Key Challenges of Native Design</h2>
+                        <hr class="horizontalRule bg-red-500">
+                        <p class="py-2">
+                            <ul class="pl-10 mt-6 list-disc">
+                                <li class="pb-6"><span class="font-bold ">Target</span> - Establishing an audience for a HR
+                                    companion app is challenging
+                                    and requires targeted research. It was also important to define the key aspects which would
+                                    be most beneficial for managers, approvals etc. It was a priority to keep the app light touch as
+                                    well</li>
+                                <li class="pb-6"><span class="font-bold ">Integration</span> - Since we were adding an app to an
+                                    existing suite of apps, it required a lot of A/B and wireframing to define what was secure yet
+                                    seamless.</li>
+                                <li class="pb-6"><span class="font-bold ">Customization</span> - The desktop version allows for a
+                                    considerable amount of customer theming. We had to outline ways to brand the product while
+                                    retaining the native and familiar
+                                    aspects. </li>
+                                <li class="pb-6"><span class="font-bold ">Design Systems</span> - As with the Desktop version, a
+                                    Design system for both
+                                    iOS and Android was implemented and enforced. There is no need to reinvent the wheel
+                                    when it comes to native apps.
+                                    See <a class="text-cyan-500" href="https://lawsofux.com/jakobs-law/">Jakob's Law</a></li>
+                            </ul>
+                        </p>                   
+                    </div>
+                </div>
+            </div>
 
-    
-       
+            <div class="sectionFrame">
+                <div class="sectionDiv">
+                    <div class="pageWidth">
+                        <img class="rounded-xl w-full object-center" src="src/img/designProcess.jpeg" alt="Enterprise Design" />
+                    </div>
+                </div>
+            </div>
 
+            <div class="sectionFrameOn">
+                <div class="sectionDiv">
+                    <div class="pageWidth">
+                        <h2 class="paragraphHeading">Design Process</h2>
+                        <hr class="horizontalRule bg-red-500">
+                        <p class="py-2">
+                            Just as with the Desktop version, We went through many iterations of improvised design processes and
+                            came to a conclusion. There is no one size fits all solution, we settled on a simplified version of the below
+                            diagram.
+                        </p>    
+                        <p class="py-2">
+                            The overall size of the native app is considerably smaller so it is somewhat easier to map user flows.
+                        </p>                  
+                    </div>
+                </div>
+            </div>
 
+            <div class="sectionFrame">
+                <div class="sectionDiv">
+                    <div class="pageWidth">
+                        <h2 class="paragraphHeading">Some Concept Examples</h2>
+                        <hr class="horizontalRule bg-red-500">
+                        <h2 class="px-6 mt-10 uppercase text-sm text-gray-400">Profile</h2>
+                        <img class="mt-8 rounded-xl sm:w-full sm:object object-center" src="src/img/N1.png" alt="Workforce Managment" />
+            
+                        <h2 class="mt-10 uppercase text-sm text-gray-400">Pay</h2>
+                        <img class="mt-8 rounded-xl sm:w-full sm:object object-center"  src="src/img/N2.png" alt="Workforce Managment" />
+            
+                        <h2 class="mt-10 uppercase text-sm text-gray-400">Design System</h2>
+                        <img class="mt-8 rounded-xl sm:w-full sm:object object-center"  src="src/img/N3.png" alt="Workforce Managment" />
+                    </div>
+                </div>
+            </div>
+
+            <!--Mail-->
             <div class="px-6 py-32 grid place-items-center">
                 <a href="mailto:colmmurchu@gmail.com?subject=Hello friend!">
-                    <img class="h-10" src="src/img/email.svg" alt="Email Icon" />
+                    <svg class="mailTo text-white fill-current h-10 w-10 rounded-full" viewBox="0 0 36 36">
+                        <path d="M10,10H10c-1.1,0-1.99,0.9-1.99,2L8,24c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V12C28,
+                                10.9,27.1,10,26,10z M10,24H10V14l8,5l8-5V24z M18,17l-8-5h16L18,17z" />
+                    </svg>
                 </a>
-            </div>
-    
-    </div>
-
-</body>
-
+            </div><!--Mail End -->
+        
+        </div><!-- Main Content End-->
+    </body>
 </html>
