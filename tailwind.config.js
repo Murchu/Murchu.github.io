@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
        MyFont: ["Open Sans", "sans-serif"],
       },
+      backgroundImage: {
+        'hero-pattern': "url('/src/img/pattern.svg')"
+      }
     },
   }, 
   plugins: [
