@@ -7,7 +7,7 @@
 
 
 .paragraphHeading {
-    @apply font-MyFont font-semibold text-2xl text-slate-400;
+    @apply font-MyFont font-semibold text-xl sm:text-2xl  sm:text-slate-600;
 }
 
 .sectionFrame {
@@ -15,24 +15,56 @@
 }
 
 .sectionFrameOn {
-    @apply w-full bg-teal-50;
+    @apply w-full bg-gradient-to-l from-neutral-100 to-neutral-200;
+}
+
+.sectionFrameOnAlt {
+    @apply w-full bg-gradient-to-r from-neutral-100 to-neutral-200;
 }
 
 .sectionDiv{
-    @apply p-6 pt-10 max-w-screen-xl m-auto;
+    @apply px-6 py-10 sm:py-20 max-w-screen-xl m-auto;
 }
+
+/* Gradients */
 .gradient {
-    @apply w-full bg-gradient-to-b from-amber-50  ;
+    @apply bg-gradient-to-l from-slate-200 to-indigo-700;  
+}
+.NativeGradient {
+    @apply bg-gradient-to-l from-slate-200 to-rose-700;  
+}
+.ProcessGradient {
+    @apply bg-gradient-to-l from-slate-200 to-teal-700;  
+}
+.CaseGradient {
+    @apply bg-gradient-to-l from-slate-200 to-amber-700;  
 }
 
-.pageWidth{
-    @apply mb-6 sm:w-4/5 m-auto;
-}
 
+
+/* HR */
 .horizontalRule {
-    @apply mt-4 w-20 h-1;
+    @apply mb-4 mt-4 w-20 h-1 ;
 }
+.EThorizontalRuleColour {
+    @apply bg-indigo-300;
+}
+.NAhorizontalRuleColour{
+    @apply bg-rose-300
+}
+.PDhorizontalRuleColour{
+    @apply bg-amber-500;
+}
+.CShorizontalRuleColour{
+    @apply bg-cyan-300
+}
+
 
 .mailTo {
     @apply bg-cyan-400;
+}
+
+/* 1 to 2 column grid classes*/
+.twoColumnGrid{
+    @apply grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-12 md:gap-36;
 }
