@@ -20,199 +20,211 @@
     <body class="font-MyFont">
 
         <!--Navigation Bar-->
-        <nav class="flex justify-between px-6 py-8 mx-auto sm:max-w-screen-xl sm:mx-auto bg-white">
-            <a href="https://www.iamcolm.com/">
-                <div>
-                    <img class="h-6" src="src/img/logo.svg" alt="logo" />
+        <div class="ProcessGradient z-10">
+            <nav class="flex justify-between px-6 py-8 mx-auto sm:max-w-screen-xl sm:mx-auto ">
+                <a href="https://www.iamcolm.com/">
+                    <div class="sm:hidden">
+                        <img class="h-6" src="src/img/SmallAltLogo.svg" alt="logo" />
+                    </div>
+                    <div class="hidden sm:block">
+                        <img class="h-6" src="src/img/AltLogo.svg" alt="logo" />
+                    </div>
+                </a>
+                <div class="hidden text-gray-500 font-normal space-x-8 lg:flex">
+                    <a class="hover:text-teal-700" href="index.html">Home</a>
+                    <a class="hover:text-teal-700" href="src/Colm_Murphy_CV.pdf">About</a>
+                    <a class="hover:text-teal-700" href="process.html">Process</a>
                 </div>
-            </a>
-            <div class="hidden text-gray-500 font-normal space-x-8 lg:flex">
-                <a class="hover:text-indigo-700" href="index.html">Home</a>
-                <a class="hover:text-indigo-700" href="src/Colm_Murphy_CV.pdf">About</a>
-                <a class="hover:text-indigo-700" href="process.html">Process</a>
-            </div>
-            <div class="flex lg:hidden">
-                <div class=" bg-white flex flex-col justify-center ">
-                    <div class="flex items-center justify-center ">
-                        <div class=" relative inline-block text-left dropdown">
-                            <span class="rounded-md shadow-sm"><button
-                                    class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
-                                    type="button" aria-haspopup="true" aria-expanded="true"
-                                    aria-controls="headlessui-menu-items-117">
-                                    <span>More</span>
-                                    <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </button></span>
-                            <div
-                                class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
-                                <div class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-                                    aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
-                                    <a href="index.html">
+                <div class="flex lg:hidden z-20">
+                    <div class=" bg-white flex flex-col justify-center ">
+                        <div class="flex items-center justify-center ">
+                            <div class=" relative inline-block text-left dropdown">
+                                <span class="rounded-md shadow-sm"><button
+                                        class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                                        type="button" aria-haspopup="true" aria-expanded="true"
+                                        aria-controls="headlessui-menu-items-117">
+                                        <span>More</span>
+                                        <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button></span>
+                                <div
+                                    class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95 z-10">
+                                    <div class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                                        aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
+                                        <a href="index.html">
+                                            <div class="px-4 py-3">
+                                                <p class="text-sm leading-5">Home</p>
+                                            </div>
+                                        </a>
                                         <div class="px-4 py-3">
-                                            <p class="text-sm leading-5">Home</p>
+                                            <a href="src/Colm_Murphy_CV.pdf">
+                                                <p class="text-sm leading-5">About</p>
                                         </div>
-                                    </a>
-                                    <div class="px-4 py-3">
-                                        <a href="src/Colm_Murphy_CV.pdf">
-                                            <p class="text-sm leading-5">About</p>
+                                        </a>
+                                        <a href="process.html">
+                                            <div class="px-4 py-3">
+                                                <p class="text-sm leading-5">Process</p>
+                                            </div>
+                                        </a>
                                     </div>
-                                    </a>
-                                    <a href="process.html">
-                                        <div class="px-4 py-3">
-                                            <p class="text-sm leading-5">Process</p>
-                                        </div>
-                                    </a>
+
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-        </nav>
+            </nav>
+        </div>
 
         <!--Main Content-->
         <div class="m-auto font-light text-slate-600 leading-loose">
+           
             
             <!-- Title -->
-            <div class="sectionFrame">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <h1 class="mb-6 font-MyFont font-bold text-xl sm:text-4xl ">
+            <div class="sectionFrame relative ProcessGradient overflow-clip">
+
+                <!-- Hero Image -->
+                <img class="absolute opacity-10" src="src/img/ProcessDesign/ProcessBanner.jpeg"
+                            alt="Image of a laptop and phone showing product"/>        
+
+
+                <div class="sectionDiv grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">                    
+                    <div class="w-full z-10">
+                        <h1 class="mb-6 font-bold text-xl sm:text-4xl text-white ">
                             UX & Product Design
-                        </h1>
-                        <hr class="mb-4 w-20 h-1 bg-indigo-500">
-                        <p class="">
-                            Notes on tools and process
+                        </h1> 
+                        <hr class="horizontalRule bg-amber-500">     
+                        <p class="text-slate-100">
+                            Notes on tools and process.
                         </p>
                     </div>
+                    <!-- Right Hand Image -->
+                    <div class="hidden sm:block ml-auto z-10">
+                        <img src="/src/img/ProcessDesign/ToolLogo.png" alt="">
+                    </div>                    
                 </div>
             </div>
-
-            <!-- Hero Image -->
-            <div class="sectionFrame">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <img class=" w-full object-center" src="src/img/ProcessDesign/tooling.png" alt="Enterprise Design" />
-                    </div>
-                </div>
-            </div>
-
-            <!-- Blurb -->
-            <div class="sectionFrameOn">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-
-                        <p class="py-2">
-                            UX & Product Design to me is simply about best serving the needs of current users,
+           
+            <!-- Blurb-->
+            <div class="sectionFrameOn relative">
+                <div class="sectionDiv">                    
+                    <div class="space-y-6 z-10">
+                        <h2 class="paragraphHeading">A Philosophy?</h2>    
+                        <hr class="horizontalRule PDhorizontalRuleColour">                  
+                        <p>
+                            UX & Product Design is simply about best serving the needs of current users,
                             building the needs of future users, predicting trends and avoiding churn.
-                            There are a lot of ways to set up design teams to do this but this is my approach.
+                            There are a lot of ways to set up design teams to achieve this.
                         </p>
-                    </div>
+                        <p>
+                            Product design is a discipline with key markers and outcomes. As a product designer I expect myself and others
+                            to discover and address problems and then exit leaving behind change. 
+                        </p>                  
+                        </p>                   
+                    </div>    
                 </div>
-            </div>
+            </div>   
 
             <!-- Research & Research -->
-            <div class="sectionFrameOn">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <h2 class="paragraphHeading">Research & Research</h2>
-                        <hr class="horizontalRule bg-indigo-500">
-                        <p class="py-2">
+            <div class="sectionFrameOnAlt">
+                <div class="sectionDiv">                    
+                    <div class="space-y-6 z-10">
+                        <h2 class="paragraphHeading">Research & Research</h2>    
+                        <hr class="horizontalRule PDhorizontalRuleColour">                    
+                        <p>
                             If you do not know what and who you are building for, the leanest scrum or the most agile
-                            project will not
-                            help you. I like to test to the point of routine.
-
-                            I prefer to record interviews and use dovetail to analyze conversations afterwards.
+                            project will not help you. I like to test to the point of routine.
+                        </p>
+                        <p>
+                            I prefer to record interviews and use dovetail to analyze sentiment afterwards.
                             This keeps me in the moment during the interview and not note taking.
-
+                        </p>      
+                        <p>   
                             Insights and stories can be produced from this so there can be no debate as to what was
                             discussed. I am not interested in a battle of opinions about what was implied.
-                        </p>
-
-                    </div>
+                        </p>                                 
+                    </div>    
                 </div>
-            </div>
-
+            </div>   
+                
             <!-- Testing, Testing & Testing -->
             <div class="sectionFrameOn">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <h2 class="paragraphHeading">Testing, Testing & Testing</h2>
-                        <hr class="horizontalRule bg-indigo-500">
-                        <p class="py-2">
+                <div class="sectionDiv">                    
+                    <div class="space-y-6 z-10">
+                        <h2 class="paragraphHeading">Testing, Testing & Testing</h2>    
+                        <hr class="horizontalRule PDhorizontalRuleColour">                    
+                        <p>
                             I also like to validate to the point of routine! I feel that the work UX teams can do in
-                            advance, makes
-                            dev sprint cycles easier and eventually reduces pressure on support teams.
-                        </p>
-
-                    </div>
+                            advance, makes dev sprint cycles easier and eventually reduces pressure on support teams.
+                        </p>       
+                    </div>    
                 </div>
-            </div>
+            </div>   
 
+          
             <!-- Team Design -->
-            <div class="sectionFrameOn">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <h2 class="paragraphHeading">Team Design</h2>
-                        <hr class="horizontalRule bg-indigo-500">
-                        <p class="py-2">
+            <div class="sectionFrameOnAlt">
+                <div class="sectionDiv">                    
+                    <div class="space-y-6 z-10">
+                        <h2 class="paragraphHeading">Team Design</h2>    
+                        <hr class="horizontalRule PDhorizontalRuleColour">                    
+                        <p>
                             I have found that team structure makes a dramatic difference to whatever process is in place.
                             designers (ideally with QA and product) at the root of teams makes it a smoother cycle.
-                        </p>
-                    </div>
+                        </p>       
+                    </div>    
                 </div>
-            </div>
+            </div>           
 
             <!-- Design Thinking -->
             <div class="sectionFrameOn">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <h2 class="paragraphHeading">Design Thinking ( awful term )</h2>
-                        <hr class="horizontalRule bg-indigo-500">
-                        <p class="py-2">
+                <div class="sectionDiv">                    
+                    <div class="space-y-6 z-10">
+                        <h2 class="paragraphHeading">Design Thinking ( awful term )</h2>    
+                        <hr class="horizontalRule PDhorizontalRuleColour">                    
+                        <p>
                             Places like IBM and others have designer at the O level of the business. I think the trend will
-                            go that
-                            way with designers holding more influence. For me personally, I like to consider all areas of a
+                            go that way with designers holding more influence. For me personally, I like to consider all areas of a
                             business withing my reach, I don't mean that I wish them to do what I want thought!
-                        </p>
-                        <p class="py-2">
+                        </p>   
+                        <p>
                             For example, I want to know the issues support teams are having, If 15% of their time is spent
                             on 'how do I do . . ', that issomething a UXer can help with ( research & interviews ).
                             If we can reduce this to 5% month on month then we are improving Product Scores as well
                             as reducing the cost to serve the product.
-                        </p>
-                    </div>
+                        </p>      
+                    </div>    
                 </div>
-            </div>
-
+            </div>   
+           
             <!-- More Testing -->
-            <div class="sectionFrameOn">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <h2 class="paragraphHeading">More Testing</h2>
-                        <hr class="horizontalRule bg-indigo-500">
-                        <p class="py-2">
+            <div class="sectionFrameOnAlt">
+                <div class="sectionDiv">                    
+                    <div class="space-y-6 z-10">
+                        <h2 class="paragraphHeading">More Testing</h2>    
+                        <hr class="horizontalRule PDhorizontalRuleColour">                    
+                        <p>
                             Sorry but I cannot stress it enough! Ideally
                             you include users in the process so the expectation is they will test the product. This
                             of tools like maze which takes your direct
                             wireframes and records flows, correct and incorrect click, click rates, bounce rates and
                             more. It is important to me to never feel like I know better because I don't.
-                        </p>
-                    </div>
+                        </p>       
+                    </div>    
                 </div>
-            </div>
+            </div>   
 
-            <!-- Mail To -->
+    
+            <!--Mail-->
             <div class="px-6 py-32 grid place-items-center">
                 <a href="mailto:colmmurchu@gmail.com?subject=Hello friend!">
                     <svg class="mailTo text-white fill-current h-10 w-10 rounded-full" viewBox="0 0 36 36">
                         <path d="M10,10H10c-1.1,0-1.99,0.9-1.99,2L8,24c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V12C28,
-                                    10.9,27.1,10,26,10z M10,24H10V14l8,5l8-5V24z M18,17l-8-5h16L18,17z" />
+                                10.9,27.1,10,26,10z M10,24H10V14l8,5l8-5V24z M18,17l-8-5h16L18,17z" />
                     </svg>
                 </a>
-            </div><!-- End Mail To -->
+            </div><!--Mail End -->
 
         </div><!-- Main Content End-->
     </body>

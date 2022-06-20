@@ -20,244 +20,307 @@
     <body class="font-MyFont">
 
         <!--Navigation Bar-->
-        <nav class="flex justify-between px-6 py-8 mx-auto sm:max-w-screen-xl sm:mx-auto">
-            <a href="https://www.iamcolm.com/">
-                <div>
-                    <img class="h-6" src="src/img/logo.svg" alt="logo" />
+        <div class="gradient z-10">
+            <nav class="flex justify-between px-6 py-8 mx-auto sm:max-w-screen-xl sm:mx-auto ">
+                <a href="https://www.iamcolm.com/">
+                    <div class="sm:hidden">
+                        <img class="h-6" src="src/img/SmallAltLogo.svg" alt="logo" />
+                    </div>
+                    <div class="hidden sm:block">
+                        <img class="h-6" src="src/img/AltLogo.svg" alt="logo" />
+                    </div>
+                </a>
+                <div class="hidden text-gray-500 font-normal space-x-8 lg:flex">
+                    <a class="hover:text-teal-700" href="index.html">Home</a>
+                    <a class="hover:text-teal-700" href="src/Colm_Murphy_CV.pdf">About</a>
+                    <a class="hover:text-teal-700" href="process.html">Process</a>
                 </div>
-            </a>
-            <div class="hidden text-gray-500 font-normal space-x-8 lg:flex">
-                <a class="hover:text-teal-700" href="index.html">Home</a>
-                <a class="hover:text-teal-700" href="src/Colm_Murphy_CV.pdf">About</a>
-                <a class="hover:text-teal-700" href="process.html">Process</a>
-            </div>
-            <div class="flex lg:hidden">
-                <div class=" bg-white flex flex-col justify-center ">
-                    <div class="flex items-center justify-center ">
-                        <div class=" relative inline-block text-left dropdown">
-                            <span class="rounded-md shadow-sm"><button
-                                    class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
-                                    type="button" aria-haspopup="true" aria-expanded="true"
-                                    aria-controls="headlessui-menu-items-117">
-                                    <span>More</span>
-                                    <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </button></span>
-                            <div
-                                class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
-                                <div class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-                                    aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
-                                    <a href="index.html">
+                <div class="flex lg:hidden z-20">
+                    <div class=" bg-white flex flex-col justify-center ">
+                        <div class="flex items-center justify-center ">
+                            <div class=" relative inline-block text-left dropdown">
+                                <span class="rounded-md shadow-sm"><button
+                                        class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                                        type="button" aria-haspopup="true" aria-expanded="true"
+                                        aria-controls="headlessui-menu-items-117">
+                                        <span>More</span>
+                                        <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button></span>
+                                <div
+                                    class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95 z-10">
+                                    <div class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                                        aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
+                                        <a href="index.html">
+                                            <div class="px-4 py-3">
+                                                <p class="text-sm leading-5">Home</p>
+                                            </div>
+                                        </a>
                                         <div class="px-4 py-3">
-                                            <p class="text-sm leading-5">Home</p>
+                                            <a href="src/Colm_Murphy_CV.pdf">
+                                                <p class="text-sm leading-5">About</p>
                                         </div>
-                                    </a>
-                                    <div class="px-4 py-3">
-                                        <a href="src/Colm_Murphy_CV.pdf">
-                                            <p class="text-sm leading-5">About</p>
+                                        </a>
+                                        <a href="process.html">
+                                            <div class="px-4 py-3">
+                                                <p class="text-sm leading-5">Process</p>
+                                            </div>
+                                        </a>
                                     </div>
-                                    </a>
-                                    <a href="process.html">
-                                        <div class="px-4 py-3">
-                                            <p class="text-sm leading-5">Process</p>
-                                        </div>
-                                    </a>
-                                </div>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
-        </nav>
+            </nav>
+        </div>
 
         <!--Main Content-->
-        <div class="m-auto font-light text-slate-600 leading-loose">
+        <div class="m-auto font-light text-slate-600 leading-loose transition-all">
 
             <!-- Title -->
-            <div class="sectionFrame">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <h1 class="mb-6 font-MyFont font-bold text-xl sm:text-4xl ">
+            <div class="sectionFrame relative gradient overflow-clip">
+
+                <!-- Hero Image -->
+                <img class="absolute opacity-10" src="src/img/test.jpeg"
+                            alt="Image of a laptop and phone showing product"/>        
+
+
+                <div class="sectionDiv grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">                    
+                    <div class="w-full z-10">
+                        <h1 class="mb-6 font-bold text-xl sm:text-4xl text-white ">
                             Enterprise Design
-                        </h1>
-                        <hr class="mb-4 w-20 h-1 bg-red-500">
-                        <p class="">
-                            CoreHR undertook the considerable task of an entire <span class="font-medium">Product & UI
-                                Redesign</span>
-                            with the aim of modernizing the front end and user experience.
+                        </h1> 
+                        <hr class="horizontalRule bg-teal-300">     
+                        <p class="text-slate-100">
+                            Product & UI Redesign of the Access PeopleXD end-to-end HR solution 
+                            with the aim of streamlining the front end user experience.
                         </p>
                     </div>
+                    <!-- Right Hand Image -->
+                    <div class="hidden sm:block ml-auto z-10">
+                        <img src="/src/img/EnterpriseDesign/home.png" alt="">
+                    </div>
+                    
                 </div>
             </div>
-
-            <!-- Hero Image -->
-            <div class="sectionFrame bg-hero-pattern bg-fixed bg-contain overflow-auto">
-                <div class="sectionDiv">
-                    <div class="pageWidth p-6 sm:hidden">
-                        <img class="rounded-xl w-full object-center" src="src/img/EnterpriseDesign/ET.png"
-                            alt="Native App Images" />
-                    </div>
-                    <div class="pageWidth p-6 hidden sm:block ">
-                        <img class="rounded-xl w-full object-center" src="src/img/EnterpriseDesign/SMET.png"
-                            alt="Native App Images" />
-                    </div>
-                </div>
-            </div>
-
-            <!-- Background -->
-            <div class="sectionFrame">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <h2 class="paragraphHeading">Background</h2>
-                        <hr class="horizontalRule bg-red-500">
-                        <p class="py-2">
-                            I joined the company as UX designer on the basis of having a knowledge of Google's Material
-                            Design,
-                            which was to form the basic structure of the redesign.
+           
+            <!-- Role & Background -->
+            <div class="sectionFrameOnAlt">                
+                <div class="sectionDiv twoColumnGrid">                    
+                    <div class="space-y-6">
+                        <h2 class="paragraphHeading">Background</h2>    
+                        <hr class="horizontalRule EThorizontalRuleColour">                  
+                        <p>
+                            <a href="https://www.theaccessgroup.com/en-gb/products/people-xd/"><span class="font-medium text-indigo-500">Access PeopleXD ( formally CoreHR )</span> </a> is an end-to-end HR solution with unified 
+                            payroll for UK and Irish businesses. 
                         </p>
+                        <p>
+                            The application was <span class="font-medium">entirely redesigned</span> in almost every way from UI & UX 
+                            to architecturally with the aim of streamline the experience.
+                        </p>
+                        <p>
+                            The visual redesign was based on <a href="https://m3.material.io/"><span class="font-medium text-indigo-500">Google&rsquo;s Material Design</span> </a>language as previously 
+                            the application was not based on any language.
+                        </p>
+                        <p>
+                            Access PeopleXD is a very large and in production application and converting it 
+                            was a huge undertaking and took several years.
+                        </p>
+                    </div>
 
-                        <p class="py-2">
-                            <h3 class="text-teal-700 font-semibold">Some key achievements</h3>
-                            <ul class="pl-10 mt-6 list-disc">
-                                <li class="pb-6"><span class="font-bold ">Implemented a design process</span> - This has
+
+                    <!-- Right Hand Side -->
+                    <div class="space-y-6">                  
+                      <h2 class="paragraphHeading">My Role</h2>    
+                      <hr class="horizontalRule EThorizontalRuleColour">                   
+                        <p>               
+                            <ul class="pl-6 list-disc space-y-6">
+                                <li><span class="font-bold ">UI Designer &amp; Prototyper</span> 
+                                    - Acted as a visual UI designer to 
+                                    adapt Material Design to the needs's of the application.
+                                </li>
+                                <li><span class="font-bold ">UX Designer</span>
+                                    - Worked as a UX designer to contuct research, interview stakeholders,
+                                    conduct user testing & other field research.
+    
+                                </li>
+                                <li><span class="font-bold ">Design Evangelist</span>
+                                    - Worked to bring product design into the arena of software development,
+                                    and as a standards gatekeeper. 
+                                </li>
+                                <li><span class="font-bold ">Accessibility Engineer</span>
+                                    - Performed accessibility audits and continuous assesment of the production 
+                                    application
+                                </li>
+                            </ul>
+                        </p>               
+                    </div>
+                </div>
+            </div>            
+
+            <!-- Key Achievments -->
+            <div class="sectionFrameOn relative">
+
+                <!-- Hero Image
+                <img class="absolute opacity-10" src="src/img/EnterpriseDesign/rise.svg"
+                            alt=""/> -->   
+   
+                <div class="sectionDiv">                    
+                    <div class="space-y-6 z-10">
+                        <h2 class="paragraphHeading">Key Achievments</h2>    
+                        <hr class="horizontalRule EThorizontalRuleColour">                    
+                        <p>              
+                            <ul class="pl-6 list-disc space-y-6">
+                                <li><span class="font-bold ">Implemented a design process</span> - This has
                                     helped
                                     teams establish structure
                                     with designers embedded into sprint teams.</li>
-                                <li class="pb-6"><span class="font-bold ">Improved usability & Accessibility across the
-                                        Application.</span>
+                                <li><span class="font-bold ">Improved usability & Accessibility across the
+                                    Application.</span>
                                     Very little usability or accessibility testing was done during development or design
                                     handoff.
                                     We established automated accessibility testing and communicated the value of accessible
                                     design
                                     accros the application</li>
-                                <li class="pb-6"><span class="font-bold ">Became more of a design evangelist</span> - We
+                                <li><span class="font-bold ">Became more of a design evangelist</span> - We
                                     worked to
                                     bring the language of design to the fore of most discussions about any product.
                                     We worked hard to develop a design language which can help the entire business.
                                     Design consistency can help reduce the pressure on support teams, improve sales teams on
                                     stage
                                     appearance and much more besides. </li>
-                                <li class="pb-6"><span class="font-bold ">Design Systems</span> - We created, maintained and
+                                <li><span class="font-bold ">Design Systems</span> - We created, maintained and
                                     implemented a design system for the entire application. Using atomic design principles
                                     we
                                     brought
                                     consistency and speed to the design and development of the application.</li>
                             </ul>
-                        </p>
-                    </div>
+                        </p>                    
+                    </div>    
                 </div>
             </div>
 
-            <!-- Design Process -->
-            <div class="sectionFrame">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <h2 class="paragraphHeading">Design Process</h2>
-                        <img class="rounded-xl w-full object-center" src="src/img/CommonImg/designProcess.jpeg"
-                            alt="Enterprise Design" />
+            <!-- Design Process & Understanding Problems -->
+            <div class="sectionFrameOnAlt">                
+                <div class="sectionDiv twoColumnGrid">                    
+                    <div class="space-y-6">
+                        <h2 class="paragraphHeading">Design Process</h2>    
+                        <hr class="horizontalRule EThorizontalRuleColour">                    
                         <p>
-                            We went through many iterations of improvised desighn process and came to a conclusion.
+                            We went through many iterations of improvised desighn processes and came to a conclusion.
                             There is no one size fits all soloution, we settled on a simplified version of the below
                             diagram.
                         </p>
-                        <p class="py-4">
+                        <p>
                             The product suite is large, and we had to change the wheels while the car was on the road so to
-                            speak.
-                            We were also working with a large number of dev and product teams.
+                            speak.We were also working with a large number of dev and product teams.
                         </p>
+                        <p>
+                           
+                        </p>               
                     </div>
-                </div>
-            </div>
 
-            <!-- Understanding Problems -->
-            <div class="sectionFrame">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <h2 class="paragraphHeading ">Understanding Problems</h2>
-                        <hr class="horizontalRule bg-red-500">
-                        <p class="py-2">
+
+                    <!-- Right Hand Side -->
+                    <div class="space-y-6">
+                        <h2 class="paragraphHeading">Understanding Problems</h2>    
+                        <hr class="horizontalRule EThorizontalRuleColour">                   
+                        <p>
                             Through detailed user research and speaking with users we gained many key insights which helped
                             define any given problem.
                         </p>
-                        <p class="py-2">
+                        <p>
                             Recorded interviews with tools like dovetail help analyze what is said in the moment. We then
                             categorized feedback which helps group similar points of view.
                         </p>
+                        <p>
+                          
+                        </p>               
                     </div>
+                 </div>
+        
+            </div>
+
+
+             <!-- Some Concept Examples -->
+             <div class="sectionFrameOn">
+                <div class="sectionDiv">
+                        <h2 class="pb-6 uppercase text-sm text-gray-400">Sample Design Process</h2>
+                        <img class="max-w-screen-xl m-auto rounded-xl object-center" 
+                            src="src/img/CommonImg/designProcess-07.svg"
+                                alt="Enterprise Design" />           
+                 
                 </div>
             </div>
 
             <!-- Research Techniques -->
-            <div class="sectionFrame">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <h2 class="paragraphHeading">Research Techniques</h2>
-                        <hr class="horizontalRule bg-red-500">
-                        <p class="py-2">
-                            <ul class="pl-10 mt-6 list-disc">
-                                <li class="pb-6"><span class="font-bold ">Recorded Analysis</span> - No matter how good your
-                                    notes
-                                    are,
-                                    there is no substitute to listening back to hear what was said and interpret what was
-                                    implied.
-                                </li>
-                                <li class="pb-6"><span class="font-bold ">Jobs To Be Done</span> - A personal favourite of
-                                    mine is
-                                    the Jobs To Be DoneUX principle. It basically defines what the key accomplishments
-                                    of a given task are to the user.
-                                </li>
-                                <li class="pb-6"><span class="font-bold ">User and Company Personas</span> - We worked to
-                                    create
-                                    sets of user and company
-                                    personas to keep the end user in mind for all teams. </li>
-                                <li class="pb-6"><span class="font-bold ">Iteration</span> - Many key steps like
-                                    wireframing,
-                                    journey mapping etc. have been omitted here for brevity but the main part for me is to
-                                    iterate.
-                                    Speak to the customers again and again if they are willing. We have found this very
-                                    useful
-                                    for improving pNPS score, experience
-                                </li>
-                                <li class="pb-6"><span class="font-bold ">Accessibility</span> - Your might have to just
-                                    email me to
-                                    ask me about how we handle accessibility, far too detailed for here!
-                                </li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <div class="sectionFrameOnAlt relative">
 
-            <!-- Conclusions -->
-            <div class="sectionFrame">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
-                        <h2 class="paragraphHeading">Conclusions</h2>
-                        <hr class="horizontalRule bg-red-500">
-                        <p class="py-2">
+                <!-- Hero Image
+                <img class="absolute opacity-10" src="src/img/EnterpriseDesign/rise.svg"
+                            alt=""/> -->   
+   
+                <div class="sectionDiv">                    
+                    <div class="space-y-6 z-10">
+                        <h2 class="paragraphHeading">Research Techniques</h2>    
+                        <hr class="horizontalRule EThorizontalRuleColour">                    
+                        <p>              
+                            <ul class="pl-6 list-disc space-y-6">
+                                <li><span class="font-bold ">Recorded Analysis</span> - No matter how good your
+                                    notes are,there is no substitute to listening back to hear what was said and interpret what was
+                                    implied.</li>
+                                <li><span class="font-bold ">Jobs To Be Done</span> - A personal favourite of
+                                    mine is  the Jobs To Be Done UX principle. It basically defines what the key accomplishments
+                                    of a given task are to the user.</li>
+                                <li><span class="font-bold ">User and Company Personas</span> - We worked to
+                                    create sets of user and company personas to keep the end user in mind for all teams.</li>
+                                <li><span class="font-bold ">Iteration</span> - Many key steps like
+                                    wireframing, journey mapping etc. have been omitted here for brevity but the main part for me is to
+                                    iterate. Speak to the customers again and again if they are willing. We have found this very
+                                    useful for improving pNPS score, experience</li>
+                                <li><span class="font-bold ">Accessibility</span> - You might have to 
+                                    email me to ask me about how we handled accessibility, it is far too detailed for here!</li>
+                            </ul>
+                        </p>                    
+                    </div>    
+                </div>
+            </div>              
+          
+               <!-- Conclusions -->
+            <div class="sectionFrameOn relative">
+
+                <!-- Hero Image
+                <img class="absolute opacity-10" src="src/img/EnterpriseDesign/rise.svg"
+                            alt=""/> -->   
+   
+                <div class="sectionDiv">                    
+                    <div class="space-y-6 z-10">
+                        <h2 class="paragraphHeading">Conclusions</h2>    
+                        <hr class="horizontalRule EThorizontalRuleColour">                    
+                        <p>
                             This was a massive, multi year project, which is currently in its second iteration and live with
                             millions of users.
                         </p>
-                        <p class="py-2">
+                        <p>
                             We monitor and gather in app feedback on a rolling basis and the overwhelming majority has been
-                            positive.
+                            positive. 
                             It is of course not all positive but negative feedback is very useful to identify problems sets
-                            and
-                            research target.
-                        </p>
-                    </div>
+                            and research target.
+                        </p>                   
+                    </div>    
                 </div>
-            </div>
+            </div>              
+          
 
             <!-- Some Concept Examples -->
             <div class="sectionFrame">
-                <div class="sectionDiv">
-                    <div class="pageWidth">
+                <div class="sectionDiv">                  
                         <h2 class="paragraphHeading">Some Concept Examples</h2>
-                        <hr class="horizontalRule bg-red-500">
-                        <h2 class="mt-10 uppercase text-sm text-gray-400">Dashboard</h2>
+                        <hr class="horizontalRule EThorizontalRuleColour">  
+                        <h2 class="mt-10 uppercase text-sm text-gray-400">Dashboards</h2>
                         <img class="mt-8 rounded-xl sm:w-full sm:object object-center"
                             src="src/img/EnterpriseDesign/dashboard.png" alt="Image of Dashboard" />
 
@@ -265,10 +328,10 @@
                         <img class="mt-8 rounded-xl sm:w-full sm:object object-center"
                             src="src/img/EnterpriseDesign/analytics.png" alt="Image of Analytics" />
 
-                        <h2 class="mt-10 uppercase text-sm text-gray-400">Design System</h2>
+                        <h2 class="mt-10 uppercase text-sm text-gray-400">Work Froce Managment</h2>
                         <img class="mt-8 rounded-xl sm:w-full sm:object object-center"
                             src="src/img/EnterpriseDesign/Time.png" alt="Image of a time" />
-                    </div>
+                 
                 </div>
             </div>
 
