@@ -605,9 +605,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-divide-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
-.overflow-auto{
-  overflow: auto;
-}
 .overflow-hidden{
   overflow: hidden;
 }
@@ -668,15 +665,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-amber-500{
   --tw-bg-opacity: 1;
   background-color: rgb(245 158 11 / var(--tw-bg-opacity));
-}
-.bg-hero-pattern{
-  background-image: url('/src/img/pattern.svg');
-}
-.bg-contain{
-  background-size: contain;
-}
-.bg-fixed{
-  background-attachment: fixed;
 }
 .fill-current{
   fill: currentColor;
