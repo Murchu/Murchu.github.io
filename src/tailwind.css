@@ -28,16 +28,16 @@
 
 /* Gradients */
 .gradient {
-    @apply bg-gradient-to-l from-slate-200 to-indigo-700;  
+    @apply bg-gradient-to-l from-teal-400 to-indigo-700;  
 }
 .NativeGradient {
-    @apply bg-gradient-to-l from-slate-200 to-rose-700;  
+    @apply bg-gradient-to-l from-pink-400 to-rose-700;  
 }
 .ProcessGradient {
-    @apply bg-gradient-to-l from-slate-200 to-teal-700;  
+    @apply bg-gradient-to-l from-cyan-400 to-teal-700;  
 }
 .CaseGradient {
-    @apply bg-gradient-to-l from-slate-200 to-amber-700;  
+    @apply bg-gradient-to-l from-amber-400 to-amber-700;  
 }
 
 
@@ -50,13 +50,13 @@
     @apply bg-indigo-300;
 }
 .NAhorizontalRuleColour{
-    @apply bg-rose-300
+    @apply bg-amber-500
 }
 .PDhorizontalRuleColour{
     @apply bg-amber-500;
 }
 .CShorizontalRuleColour{
-    @apply bg-cyan-300
+    @apply bg-emerald-500;
 }
 
 

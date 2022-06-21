@@ -642,9 +642,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(94 234 212 / var(--tw-bg-opacity));
 }
-.bg-teal-50{
+.bg-cyan-50{
   --tw-bg-opacity: 1;
-  background-color: rgb(240 253 250 / var(--tw-bg-opacity));
+  background-color: rgb(236 254 255 / var(--tw-bg-opacity));
 }
 .bg-red-50{
   --tw-bg-opacity: 1;
@@ -665,10 +665,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-amber-500{
   --tw-bg-opacity: 1;
   background-color: rgb(245 158 11 / var(--tw-bg-opacity));
-}
-.bg-cyan-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 254 255 / var(--tw-bg-opacity));
 }
 .fill-current{
   fill: currentColor;
@@ -769,9 +765,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .leading-loose{
   line-height: 2;
 }
-.text-gray-500{
+.text-slate-200{
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 .text-gray-700{
   --tw-text-opacity: 1;
@@ -797,13 +793,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(99 102 241 / var(--tw-text-opacity));
 }
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
 .text-stone-700{
   --tw-text-opacity: 1;
   color: rgb(68 64 60 / var(--tw-text-opacity));
 }
-.text-teal-700{
+.text-cyan-600{
   --tw-text-opacity: 1;
-  color: rgb(15 118 110 / var(--tw-text-opacity));
+  color: rgb(8 145 178 / var(--tw-text-opacity));
 }
 .text-stone-500{
   --tw-text-opacity: 1;
@@ -812,14 +812,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-rose-500{
   --tw-text-opacity: 1;
   color: rgb(244 63 94 / var(--tw-text-opacity));
-}
-.text-cyan-700{
-  --tw-text-opacity: 1;
-  color: rgb(14 116 144 / var(--tw-text-opacity));
-}
-.text-cyan-600{
-  --tw-text-opacity: 1;
-  color: rgb(8 145 178 / var(--tw-text-opacity));
 }
 .text-opacity-25{
   --tw-text-opacity: 0.25;
@@ -934,26 +926,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* Gradients */
 .gradient{
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
-  --tw-gradient-from: #e2e8f0;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(226 232 240 / 0));
+  --tw-gradient-from: #2dd4bf;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(45 212 191 / 0));
   --tw-gradient-to: #4338ca;
 }
 .NativeGradient{
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
-  --tw-gradient-from: #e2e8f0;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(226 232 240 / 0));
+  --tw-gradient-from: #f472b6;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(244 114 182 / 0));
   --tw-gradient-to: #be123c;
 }
 .ProcessGradient{
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
-  --tw-gradient-from: #e2e8f0;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(226 232 240 / 0));
+  --tw-gradient-from: #22d3ee;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(34 211 238 / 0));
   --tw-gradient-to: #0f766e;
 }
 .CaseGradient{
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
-  --tw-gradient-from: #e2e8f0;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(226 232 240 / 0));
+  --tw-gradient-from: #fbbf24;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(251 191 36 / 0));
   --tw-gradient-to: #b45309;
 }
 
@@ -972,7 +964,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .NAhorizontalRuleColour{
   --tw-bg-opacity: 1;
-  background-color: rgb(253 164 175 / var(--tw-bg-opacity));
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 .PDhorizontalRuleColour{
   --tw-bg-opacity: 1;
@@ -980,7 +972,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .CShorizontalRuleColour{
   --tw-bg-opacity: 1;
-  background-color: rgb(103 232 249 / var(--tw-bg-opacity));
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
 }
 
 
@@ -1011,13 +1003,17 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 9rem;
   }
 }
-.hover\:text-teal-700:hover{
+.hover\:text-white:hover{
   --tw-text-opacity: 1;
-  color: rgb(15 118 110 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .hover\:text-gray-500:hover{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.hover\:text-teal-700:hover{
+  --tw-text-opacity: 1;
+  color: rgb(15 118 110 / var(--tw-text-opacity));
 }
 .hover\:text-opacity-100:hover{
   --tw-text-opacity: 1;
