@@ -727,7 +727,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: left;
 }
 .font-MyFont{
-  font-family: Open Sans, sans-serif;
+  font-family: "Golos Text", sans-serif;
 }
 .text-sm{
   font-size: 0.875rem;
@@ -866,7 +866,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 
 .paragraphHeading{
-  font-family: Open Sans, sans-serif;
+  font-family: "Golos Text", sans-serif;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -1002,6 +1002,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .twoColumnGrid{
     gap: 9rem;
   }
+}
+.hover\:bg-red-50:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
 }
 .hover\:text-white:hover{
   --tw-text-opacity: 1;

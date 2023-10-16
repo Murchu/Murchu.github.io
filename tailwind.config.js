@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-       MyFont: ["Open Sans", "sans-serif"],
+       MyFont: ['"Golos Text"', "sans-serif"],
       },
       backgroundImage: {
         'hero-pattern': "url('/src/img/pattern.svg')"
