@@ -8,6 +8,7 @@
     <title>CM | Case Study</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="./dist/css/styles.css" />
+    <script src="components/header.js" type="text/javascript" defer></script>
     <style>
         .dropdown:focus-within .dropdown-menu {
             opacity: 1;
@@ -17,364 +18,308 @@
     </style>
 </head>
 
-    <body class="font-MyFont">
+<body class="font-MyFont">
 
-     
-        <!--Navigation Bar-->
-        <div class="CaseGradient z-10">
-            <nav class="flex justify-between px-6 py-8 mx-auto sm:max-w-screen-xl sm:mx-auto ">
-                <a href="https://www.iamcolm.com/">
-                    <div class="sm:hidden">
-                        <img class="h-6" src="src/img/logos/SMlogoAlt.svg" alt="logo" />
-                    </div>
-                    <div class="hidden sm:block">
-                        <img class="h-6" src="src/img/logos/logoAlt.svg" alt="logo" />
-                    </div>
-                </a>
-                <div class="hidden text-slate-200 font-normal space-x-8 lg:flex">
-                    <a class="hover:text-white" href="index.html">Home</a>
-                    <a class="hover:text-white" href="src/Colm_Murphy_CV.pdf">About</a>
-                    <a class="hover:text-white" href="process.html">Process</a>
+    <site-header gradient="CaseGradient"></site-header>
+
+    <!--Main Content-->
+    <div class="m-auto font-light text-slate-600 leading-loose">
+
+
+        <!-- Title -->
+        <div class="sectionFrame relative CaseGradient overflow-clip">
+
+            <!-- Hero Image -->
+            <img class=" object-fill absolute opacity-10" src="src/img/CaseStudy/CaseStudyBanner.jpeg"
+                alt="Image of a laptop and phone showing product" />
+
+
+            <div class="sectionDiv grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+                <div class="w-full z-10">
+                    <h1 class="mb-6 font-bold text-xl sm:text-4xl text-white ">
+                        Payslip Consumer Research For Native App
+                    </h1>
+                    <hr class="horizontalRule CShorizontalRuleColour">
+                    <p class="text-slate-100">
+                        *Some screens and steps are concepts to protect IP
+                    </p>
                 </div>
-                <div class="flex lg:hidden z-20">
-                    <div class=" bg-white flex flex-col justify-center ">
-                        <div class="flex items-center justify-center ">
-                            <div class=" relative inline-block text-left dropdown">
-                                <span class="rounded-md shadow-sm"><button
-                                        class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
-                                        type="button" aria-haspopup="true" aria-expanded="true"
-                                        aria-controls="headlessui-menu-items-117">
-                                        <span>More</span>
-                                        <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                    </button></span>
-                                <div
-                                    class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95 z-10">
-                                    <div class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-                                        aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
-                                        <a href="index.html">
-                                            <div class="px-4 py-3">
-                                                <p class="text-sm leading-5">Home</p>
-                                            </div>
-                                        </a>
-                                        <div class="px-4 py-3">
-                                            <a href="src/Colm_Murphy_CV.pdf">
-                                                <p class="text-sm leading-5">About</p>
-                                        </div>
-                                        </a>
-                                        <a href="process.html">
-                                            <div class="px-4 py-3">
-                                                <p class="text-sm leading-5">Process</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-            </nav>
-        </div>
-
-        <!--Main Content-->
-        <div class="m-auto font-light text-slate-600 leading-loose">
-           
-
-            <!-- Title -->
-            <div class="sectionFrame relative CaseGradient overflow-clip">
-
-                <!-- Hero Image -->
-                <img class=" object-fill absolute opacity-10" src="src/img/CaseStudy/CaseStudyBanner.jpeg"
-                            alt="Image of a laptop and phone showing product"/>        
-
-
-                <div class="sectionDiv grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">                    
-                    <div class="w-full z-10">
-                        <h1 class="mb-6 font-bold text-xl sm:text-4xl text-white ">
-                            Payslip Consumer Research For Native App
-                        </h1> 
-                        <hr class="horizontalRule CShorizontalRuleColour">     
-                        <p class="text-slate-100">
-                            *Some screens and steps are concepts to protect IP
-                        </p>
-                    </div>
-                    <!-- Right Hand Image -->
-                    <div class="w-2/3 hidden sm:block ml-auto z-10 rounded-2xl">
-                        <img src="/src/img/CaseStudy/Tagging.gif" alt="">
-                    </div>                    
+                <!-- Right Hand Image -->
+                <div class="w-2/3 hidden sm:block ml-auto z-10 rounded-2xl">
+                    <img src="/src/img/CaseStudy/Tagging.gif" alt="">
                 </div>
             </div>
+        </div>
 
-            <!-- General Overview -->
-            <div class="sectionFrameOnAlt">                
-                <div class="sectionDiv twoColumnGrid items-center">                    
-                    <div class="space-y-6">
-                        <h2 class="paragraphHeading">General Overview</h2>    
-                        <hr class="horizontalRule CShorizontalRuleColour">                 
-                        <p>
-                            The payslip section of the Access Native App is one of the few features available to
-                            most users, regardless of tiers or packages.
+        <!-- General Overview -->
+        <div class="sectionFrameOnAlt">
+            <div class="sectionDiv twoColumnGrid items-center">
+                <div class="space-y-6">
+                    <h2 class="paragraphHeading">General Overview</h2>
+                    <hr class="horizontalRule CShorizontalRuleColour">
+                    <p>
+                        The payslip section of the Access Native App is one of the few features available to
+                        most users, regardless of tiers or packages.
+                    </p>
+                    <p>
+                        For the most part payslips along with a few other HR basics, booking time and team
+                        calendars are the <span class="font-medium">primary experience</span> for a large percentage of all users.
+                    </p>
+                    <p>
+                        This is an employee self-serving feature which would allow users to manage
+                        all aspects of a historically paper payslip.
+                    </p>
+                    <p>
+                        Users expect to be notified of payslip delivery, clearly understand the components
+                        of a payslip, view, search and print all payslips to date.
+                    </p>
+                    <p>
+                        Considerations should include application speed, communication between
+                        other functions and payslips, notification & printing.
+                    </p>
+                </div>
+
+
+                <!-- Right Hand Side -->
+                <div class="space-y-6">
+                    <img class="rounded-xl w-full object-center" src="src/img/CaseStudy/PS.png"
+                        alt="Enterprise Design" />
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Roles & responsibility -->
+        <div class="sectionFrameOn">
+            <div class="sectionDiv">
+                <div class="space-y-6 z-10">
+                    <h2 class="paragraphHeading">Roles & Responsibility</h2>
+                    <hr class="horizontalRule CShorizontalRuleColour">
+                    <p>
+                        I primarily work on the research gathering and interviewing and work with the UI designers after
+                        the fact.
+                        But of course in reality you must wear many hats and I often assist with the physical design
+                        work as well as roadmapping.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Problem Statement -->
+        <div class="sectionFrameOnAlt">
+            <div class="sectionDiv">
+                <div class="space-y-6 z-10">
+                    <h2 class="paragraphHeading">Problem Statement</h2>
+                    <hr class="horizontalRule CShorizontalRuleColour">
+                    <p>
+                        Previously, too much attention had been given to the user interface, this design debt left users
+                        frustrated with what should have been a simple and specific experience.
+                    </p>
+                    <p>
+                        Research and feedback showed that users found it difficult to identify what the current payslip
+                        was vs a previous one. They also saw the lack of a printing option was a major oversight.
+                    </p>
+                    <p>
+                        The user interface is too complex and the user experience is too basic, this needed to be
+                        reversed.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Users & Audience -->
+        <div class="sectionFrameOn">
+            <div class="sectionDiv twoColumnGrid items-center">
+                <div class="space-y-6">
+                    <h2 class="paragraphHeading">Users & Audience</h2>
+                    <hr class="horizontalRule CShorizontalRuleColour">
+                    <p>
+                        To start, we tried to identify all the potential users of a payslip
+                        function and group them into personas.
+                        <br>
+                        <p class="text-sm text-gray-400">
+                            *I will only use a single persona for brevity, several would be created as well as a company
+                            persona in practice.
                         </p>
-                        <p>                   
-                            For the most part payslips along with a few other HR basics, booking time and team
-                            calendars are the <span class="font-medium">primary experience</span> for a large percentage of all users.
-                        </p>
-                        <p>
-                            This is an employee self-serving feature which would allow users to manage
-                            all aspects of a historically paper payslip.
-                        </p>
-                        <p>
-                            Users expect to be notified of payslip delivery, clearly understand the components
-                            of a payslip, view, search and print all payslips to date.
-                        </p>
-                        <p>
-                            Considerations should include application speed, communication between
-                            other functions and payslips, notification & printing.
-                        </p>
-                    </div>
-
-
-                    <!-- Right Hand Side -->
-                    <div class="space-y-6">                  
-                        <img class="rounded-xl w-full object-center" src="src/img/CaseStudy/PS.png"
-                        alt="Enterprise Design" />             
-                           
-                    </div>
+                    </p>
+                    <ol class="pl-6 list-disc space-y-6">
+                        <li>
+                            <span class="font-bold ">Basic Consumer</span> - A typical employee who may not
+                            have access to any other features.
+                        </li>
+                        <li>
+                            <span class="font-bold ">Occasional Monthly User</span> - Only looks at his payslip
+                            if there is a problem with his salary hitting his bank.
+                        </li>
+                        <li>
+                            <span class="font-bold ">Notification Driven Transaction</span> - LIkes to be notified
+                            that he has a new payslip to avoid opening the app.
+                        </li>
+                    </ol>
                 </div>
-            </div>    
-
-            <!-- Roles & responsibility -->
-            <div class="sectionFrameOn">
-                <div class="sectionDiv">                    
-                    <div class="space-y-6 z-10">
-                        <h2 class="paragraphHeading">Roles & Responsibility</h2>    
-                        <hr class="horizontalRule CShorizontalRuleColour">                    
-                        <p>
-                            I primarily work on the research gathering and interviewing and work with the UI designers after
-                            the fact.
-                            But of course in reality you must wear many hats and I often assist with the physical design
-                            work as well as roadmapping.
-                        </p>            
-                    </div>    
-                </div>
-            </div>   
-
-            <!-- Problem Statement -->
-            <div class="sectionFrameOnAlt">
-                <div class="sectionDiv">                    
-                    <div class="space-y-6 z-10">
-                        <h2 class="paragraphHeading">Problem Statement</h2>    
-                        <hr class="horizontalRule CShorizontalRuleColour">                    
-                        <p>
-                            Previously, too much attention had been given to the user interface, this design debt left users
-                            frustrated with what should have been a simple and specific experience.
-                        </p> 
-                        <p>
-                            Research and feedback showed that users found it difficult to identify what the current payslip
-                            was vs a previous one. They also saw the lack of a printing option was a major oversight.
-                        </p>  
-                        <p>
-                            The user interface is too complex and the user experience is too basic, this needed to be
-                            reversed.
-                        </p>        
-                    </div>    
-                </div>
-            </div>   
-
- 
-            <!-- Users & Audience -->
-            <div class="sectionFrameOn">                
-                <div class="sectionDiv twoColumnGrid items-center">                    
-                    <div class="space-y-6">
-                        <h2 class="paragraphHeading">Users & Audience</h2>    
-                        <hr class="horizontalRule CShorizontalRuleColour">                  
-                        <p>
-                            To start, we tried to identify all the potential users of a payslip
-                            function and group them into personas.
-                            <br>
-                            <p class="text-sm text-gray-400">
-                                *I will only use a single persona for brevity, several would be created as well as a company
-                                persona in practice.
-                            </p>
-                        </p>
-                        <ol class="pl-6 list-disc space-y-6">
-                            <li>
-                                <span class="font-bold ">Basic Consumer</span> - A typical employee who may not
-                                have access to any other features.
-                            </li>
-                            <li>
-                                <span class="font-bold ">Occasional Monthly User</span> - Only looks at his payslip
-                                if there is a problem with his salary hitting his bank.
-                            </li>
-                            <li>
-                                <span class="font-bold ">Notification Driven Transaction</span> - LIkes to be notified
-                                that he has a new payslip to avoid opening the app.
-                            </li>
-                        </ol>
-                    </div>
 
 
-                    <!-- Right Hand Side -->
-                    <div class="space-y-6">                  
-                        <img class="rounded-xl w-full object-center" src="src/img/CaseStudy/persona.svg"
-                        alt="Enterprise Design" />             
-                        
-                    </div>
-                </div>
-            </div>    
-
-            <!-- How this persona was created< -->
-            <div class="sectionFrameOnAlt">                
-                <div class="sectionDiv twoColumnGrid items-center">                    
-                    <div class="space-y-6">               
-                        <h2 class="paragraphHeading">How This Persona Was Created</h2>    
-                        <hr class="horizontalRule CShorizontalRuleColour">                    
-                        <p>
-                            To start, we tried to identify all the potential users of a payslip function and group them into
-                            personas. I personally like to conduct several user interviews, between 5 & 10 in an ideal world per
-                            persona.
-                        </p> 
-                        <p>
-                            I prefer to record interviews where permitted and use a tool like Dovetail to analyze sentiment
-                            and content after.
-                            dovetailDovetail can helpfully do some of this work for me but I will alway comb the transcript
-                            myself.
-                        </p>  
-                        <p>
-                            With detailed analysis of user group it is pretty easy to synthesize large data sets into single
-                            users
-                        </p> 
-                    </div>
-
-
-                    <!-- Right Hand Side -->
-                    <div class="space-y-6">                  
-                        <img class="rounded-xl w-full object-center" src="src/img/CaseStudy/Tagging.gif"
-                        alt="Enterprise Design" />             
-                        
-                    </div>
-                </div>
-            </div> 
-
-            <!-- Maze < -->
-            <div class="sectionFrameOn">                
-                <div class="sectionDiv twoColumnGrid items-center">      
-                    
-                    
-                    <!-- Right Hand Side -->
-                    <div class="space-y-6">                  
-                        <img class="rounded-xl w-full object-center" src="src/img/CaseStudy/maze.gif"
-                        alt="Enterprise Design" />             
-                        
-                    </div>
-
-                    <div class="space-y-6">               
-                        <h2 class="paragraphHeading">Maze A/B Testing</h2>    
-                        <hr class="horizontalRule CShorizontalRuleColour">                    
-                        <p>
-                            We created many small users tests which are based on high fidelity prototypes.
-                            With these we were able to validate most on the decisions we had to make with test audiences.
-                        </p> 
-                        <p>
-                            This proved very valuable as we uncovered interactions which had not been considered and 
-                            are in the final product. We found that user testing in this was also reduced the cost to serve
-                            as there is no disputing the facts.
-                        </p>  
-                        <p>
-                            The results were shared with key stakeholders as a proof of concept validation. 
-                    </div>
-
+                <!-- Right Hand Side -->
+                <div class="space-y-6">
+                    <img class="rounded-xl w-full object-center" src="src/img/CaseStudy/persona.svg"
+                        alt="Enterprise Design" />
 
                 </div>
-            </div> 
+            </div>
+        </div>
 
-
-
-
-            <!-- Scope & Constraints -->
-            <div class="sectionFrameOnAlt">
-                <div class="sectionDiv">                    
-                    <div class="space-y-6 z-10">
-                        <h2 class="paragraphHeading">Scope & Constraints</h2>    
-                        <hr class="horizontalRule CShorizontalRuleColour">                    
-                        <p>
-                            This was a pretty small project with large implications for the business but we were constrained
-                            by the need to keep the application consistent with the wider design system.
-                        </p> 
-                        <p>
-                            We wanted to have an application which was easy to use but crucially possible to build in th
-                            time frame. This was not a wheel inventing process.
-                        </p>  
-                        <p>
-                            All age ranges and both ends of the tech scale who use a
-                            native app for payslip managment.
-                        </p>             
-                    </div>    
+        <!-- How this persona was created< -->
+        <div class="sectionFrameOnAlt">
+            <div class="sectionDiv twoColumnGrid items-center">
+                <div class="space-y-6">
+                    <h2 class="paragraphHeading">How This Persona Was Created</h2>
+                    <hr class="horizontalRule CShorizontalRuleColour">
+                    <p>
+                        To start, we tried to identify all the potential users of a payslip function and group them into
+                        personas. I personally like to conduct several user interviews, between 5 & 10 in an ideal world per
+                        persona.
+                    </p>
+                    <p>
+                        I prefer to record interviews where permitted and use a tool like Dovetail to analyze sentiment
+                        and content after.
+                        dovetailDovetail can helpfully do some of this work for me but I will alway comb the transcript
+                        myself.
+                    </p>
+                    <p>
+                        With detailed analysis of user group it is pretty easy to synthesize large data sets into single
+                        users
+                    </p>
                 </div>
-            </div>   
 
 
+                <!-- Right Hand Side -->
+                <div class="space-y-6">
+                    <img class="rounded-xl w-full object-center" src="src/img/CaseStudy/Tagging.gif"
+                        alt="Enterprise Design" />
 
-
-             <!-- Empathy Mapping -->
-            <div class="sectionFrameOn">                
-                <div class="sectionDiv twoColumnGrid items-center">                    
-                    <div class="space-y-6">               
-                        <h2 class="paragraphHeading">Empathy Mapping</h2>    
-                        <hr class="horizontalRule CShorizontalRuleColour">                    
-                        <p>
-                            Once we understood our users we drew empath maps to try an understand the emotional
-                            connection people have to HR applications.
-                        </p> 
-                    </div>
-
-
-                    <!-- Right Hand Side -->
-                    <div class="space-y-6">                  
-                        <img class="rounded-xl w-full object-center" src="src/img/CaseStudy/empathyMap.svg"
-                        alt="Enterprise Design" />                          
-                    </div>
                 </div>
-            </div> 
+            </div>
+        </div>
 
-            <!-- Conclusions -->
-            <div class="sectionFrameOnAlt">
-                <div class="sectionDiv">                    
-                    <div class="space-y-6 z-10">
-                        <h2 class="paragraphHeading">Conclusions</h2>    
-                        <hr class="horizontalRule CShorizontalRuleColour">                    
-                        <p>
-                            Understanding the people who would eventually use the product was key from the start.
-                            We found that people had very different reasons for wanting their payslips in app but 
-                            they essentially wanted it the same when they got there. Speed, easy to read & printing.
-                        </p> 
-                        <p>
-                            It was re designed several times once we better understood the structural importance. 
-                            It is better to re design than to build on a mistake.
-                        </p>  
-                        <p>
-                           This case study helped me understand how other companies generate business value by 
-                            implementing great design in both UI and UX. It gives me confidence that if
-                             we apply similar principles, and keep doing what we are doing on UX research, 
-                             our product team can help the company achieve much more success in the near future
-                        </p>             
-                    </div>    
+        <!-- Maze < -->
+        <div class="sectionFrameOn">
+            <div class="sectionDiv twoColumnGrid items-center">
+
+
+                <!-- Right Hand Side -->
+                <div class="space-y-6">
+                    <img class="rounded-xl w-full object-center" src="src/img/CaseStudy/maze.gif"
+                        alt="Enterprise Design" />
+
                 </div>
-            </div> 
-    
 
-            <!--Mail-->
-            <div class="px-6 py-32 grid place-items-center">
-                <a href="mailto:colmmurchu@gmail.com?subject=Hello friend!">
-                    <svg class="mailTo text-white fill-current h-10 w-10 rounded-full" viewBox="0 0 36 36">
-                        <path d="M10,10H10c-1.1,0-1.99,0.9-1.99,2L8,24c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V12C28,
+                <div class="space-y-6">
+                    <h2 class="paragraphHeading">Maze A/B Testing</h2>
+                    <hr class="horizontalRule CShorizontalRuleColour">
+                    <p>
+                        We created many small users tests which are based on high fidelity prototypes.
+                        With these we were able to validate most on the decisions we had to make with test audiences.
+                    </p>
+                    <p>
+                        This proved very valuable as we uncovered interactions which had not been considered and
+                        are in the final product. We found that user testing in this was also reduced the cost to serve
+                        as there is no disputing the facts.
+                    </p>
+                    <p>
+                        The results were shared with key stakeholders as a proof of concept validation.
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <!-- Scope & Constraints -->
+        <div class="sectionFrameOnAlt">
+            <div class="sectionDiv">
+                <div class="space-y-6 z-10">
+                    <h2 class="paragraphHeading">Scope & Constraints</h2>
+                    <hr class="horizontalRule CShorizontalRuleColour">
+                    <p>
+                        This was a pretty small project with large implications for the business but we were constrained
+                        by the need to keep the application consistent with the wider design system.
+                    </p>
+                    <p>
+                        We wanted to have an application which was easy to use but crucially possible to build in th
+                        time frame. This was not a wheel inventing process.
+                    </p>
+                    <p>
+                        All age ranges and both ends of the tech scale who use a
+                        native app for payslip managment.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Empathy Mapping -->
+        <div class="sectionFrameOn">
+            <div class="sectionDiv twoColumnGrid items-center">
+                <div class="space-y-6">
+                    <h2 class="paragraphHeading">Empathy Mapping</h2>
+                    <hr class="horizontalRule CShorizontalRuleColour">
+                    <p>
+                        Once we understood our users we drew empath maps to try an understand the emotional
+                        connection people have to HR applications.
+                    </p>
+                </div>
+
+
+                <!-- Right Hand Side -->
+                <div class="space-y-6">
+                    <img class="rounded-xl w-full object-center" src="src/img/CaseStudy/empathyMap.svg"
+                        alt="Enterprise Design" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Conclusions -->
+        <div class="sectionFrameOnAlt">
+            <div class="sectionDiv">
+                <div class="space-y-6 z-10">
+                    <h2 class="paragraphHeading">Conclusions</h2>
+                    <hr class="horizontalRule CShorizontalRuleColour">
+                    <p>
+                        Understanding the people who would eventually use the product was key from the start.
+                        We found that people had very different reasons for wanting their payslips in app but
+                        they essentially wanted it the same when they got there. Speed, easy to read & printing.
+                    </p>
+                    <p>
+                        It was re designed several times once we better understood the structural importance.
+                        It is better to re design than to build on a mistake.
+                    </p>
+                    <p>
+                        This case study helped me understand how other companies generate business value by
+                        implementing great design in both UI and UX. It gives me confidence that if
+                        we apply similar principles, and keep doing what we are doing on UX research,
+                        our product team can help the company achieve much more success in the near future
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Mail-->
+        <div class="px-6 py-32 grid place-items-center">
+            <a href="mailto:colmmurchu@gmail.com?subject=Hello friend!">
+                <svg class="mailTo text-white fill-current h-10 w-10 rounded-full" viewBox="0 0 36 36">
+                    <path d="M10,10H10c-1.1,0-1.99,0.9-1.99,2L8,24c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V12C28,
                                 10.9,27.1,10,26,10z M10,24H10V14l8,5l8-5V24z M18,17l-8-5h16L18,17z" />
-                    </svg>
-                </a>
-            </div><!--Mail End -->
+                </svg>
+            </a>
+        </div><!--Mail End -->
 
-        </div><!--Main Content End -->
-    </body>
+    </div><!--Main Content End -->
+</body>
+
 </html>
