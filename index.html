@@ -1,159 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Colm Murphy | Home </title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" href="./dist/css/styles.css" />
-        <script src="components/header.js" type="text/javascript" defer></script>
-        <font-component></font-component>
-        
-        <style>
-            .dropdown:focus-within .dropdown-menu {
-                opacity: 1;
-                transform: translate(0) scale(1);
-                visibility: visible;
-            }
-        </style>
-    </head> 
-   
-
-
-
-<body class="font-MyFont"> 
-
-        <site-header gradient="none"></site-header>
-
-        <!-- Main Content -->
-        <div class="mt-4 font-light text-stone-700 leading-loose sm:max-w-screen-xl sm:mx-auto">
-            
-            <div class="">
-                <h1 class="px-6 py-4 font-bold text-3xl sm:text-4xl">
-                    Hello, <span class="p-2 bg-cyan-50 hover:bg-red-50 hover:font-Font2">I am Colm Murphy,</span>
-                </h1>
-
-                <p class="p-6 sm:mt-4 sm:text-xl sm:leading-loose ">
-                    I am a <span class="font-medium text-cyan-600">Product & UX Designer</span> with 6 years experience
-                    delivering design & process for <span class="font-medium text-cyan-600">Enterprise & SaaS
-                        Products.</span>
-                    I am passionate about user experience, accessibility, people and product
-                    design.
-                </p>
-            </div>
-
-            <!--Large Screen-->
-            <div class="px-6 hidden md:block text-3xl">
-                <!-- Enterprise Design & Native App -->
-                <div class="columns-2 gap-8 mt-10 ">
-                    <div>
-                        <a href="ET.html">
-                            <div class="relative overflow-clip bg-red-50 rounded-xl">
-                                <img class="w-full" src="src/img/index/ET.png"
-                                    alt="Image of a laptop and phone showing product" />
-                                <div
-                                    class="absolute p-20 text-opacity-25 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end  text-stone-500">
-                                    Enterprise<span class="font-semibold">&nbsp;Design</span></div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div>
-                        <a href="/native.html">
-                            <div class="relative overflow-clip bg-amber-50 rounded-xl">
-                                <img class="w-full" src="src/img/index/NA.png" alt="Image of 5 phone screens showing product" />
-                                <div
-                                    class="absolute p-20 text-opacity-25 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end  text-stone-500">
-                                    Native App<span class="font-semibold">&nbsp;Design</span></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Process Design & Case Study-->
-                <div class="gap-8 columns-2 mt-10 ">
-                    <div>
-                        <a href="/process.html">
-                            <div class="relative overflow-clip bg-indigo-50 rounded-xl">
-                                <img class="w-full" src="src/img/index/PD.png" alt="Image of design tool logos" />
-                                <div
-                                    class="absolute p-20 text-opacity-25 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end  text-stone-500">
-                                    Process<span class="font-semibold">&nbsp;Design</span></div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div>
-                        <a href="/CaseStudy.html">
-                            <div class="relative overflow-clip bg-emerald-50 rounded-xl">
-                                <img class="w-full" src="src/img/index/CS.png" alt="Image of case study phones" />
-                                <div
-                                    class="absolute p-20 text-opacity-25 hover:text-opacity-100 duration-300  inset-0 z-10 flex justify-center items-end  text-stone-500">
-                                    Case<span class="font-semibold">&nbsp;Study</span></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div><!--Large Screen End-->
-
-            <!--Small Screen-->
-            <div class="gap-8 md:hidden columns-1 ml-6 mr-6">
-
-                <a href="/ET.html">
-                    <div class="mb-6 relative overflow-hidden bg-red-50 rounded-md">
-                        <img class="w-full" src="src/img/index/ET.png" alt="Image of a laptop and phone showing product" />
-                        <div
-                            class="absolute p-10 text-opacity-75 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end  text-stone-500">
-                            Enterprise<span class="font-semibold">&nbsp;Design</span></div>
-                    </div>
-                </a>
-
-                <a href="/native.html">
-                    <div class="mb-6 relative overflow-hidden bg-amber-50 rounded-md">
-                        <img class="w-full" src="src/img/index/NA.png" alt="Image of 5 phone screens showing product" />
-                        <div
-                            class="absolute p-10 text-opacity-75 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end  text-stone-500">
-                            Native App <span class="font-semibold">&nbsp;Design</span></div>
-                    </div>
-                </a>
-
-                <a href="/process.html">
-                    <div class="mb-6 relative overflow-hidden bg-indigo-50 rounded-md">
-                        <img class="w-full" src="src/img/index/PD.png" alt="Image of design tool logos" />
-                        <div
-                            class="absolute p-10 text-opacity-75 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end  text-stone-500">
-                            Process<span class="font-semibold">&nbsp;Design</span></div>
-                    </div>
-                </a>
-
-                <a href="/CaseStudy.html">
-                    <div class="mb-6 relative overflow-hidden bg-emerald-50 rounded-md">
-                        <img class="w-full" src="src/img/index/CS.png" alt="Image of case study phones"" />
-                        <div
-                            class=" absolute p-10 text-opacity-75 hover:text-opacity-100 duration-300 inset-0 z-10 flex
-                            justify-center items-end text-stone-500">
-                        Case<span class="font-semibold">&nbsp;Study</span></div>
-            </div>
-                </a>
-            </div><!--Small Screen End-->
-            
-
-
-            <!--Mail-->
-            <div class="px-6 py-32 grid place-items-center">
-                <a href="mailto:colmmurchu@gmail.com?subject=Hello friend!">
-                    <svg class="mailTo text-white fill-current h-10 w-10 rounded-full" viewBox="0 0 36 36">
-                        <path d="M10,10H10c-1.1,0-1.99,0.9-1.99,2L8,24c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V12C28,
-                                10.9,27.1,10,26,10z M10,24H10V14l8,5l8-5V24z M18,17l-8-5h16L18,17z" />
-                    </svg>
-                </a>
-            </div><!--Mail End -->
-
-
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <title>Colm Murphy | Product & AI Designer</title>
+    <meta name="description" content="Portfolio of Colm Murphy, a Product Designer and AI Engineer specializing in Enterprise SaaS, Accessibility, and UX Research.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Colm Murphy | Product & AI Designer">
+    <meta property="og:description" content="6 years experience delivering design & process for Enterprise & SaaS Products.">
+    <meta property="og:image" content="src/img/index/ET.png"> <meta name="twitter:card" content="summary_large_image">
 
-        </div><!-- Main Content End-->
-    </body>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./dist/css/styles.css" />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    
+    <style>
+        .dropdown:focus-within .dropdown-menu {
+            opacity: 1;
+            transform: translate(0) scale(1);
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body class="font-MyFont">
+
+    <site-header gradient="none"></site-header>
+
+    <main class="mt-4 font-light text-stone-700 leading-loose sm:max-w-screen-xl sm:mx-auto">
+        
+        <header class="px-6 py-10">
+            <h1 class="font-bold text-3xl sm:text-5xl">
+                Hello, <span class="p-2 bg-cyan-50 hover:bg-red-50 transition-colors duration-300">I am Colm Murphy,</span>
+            </h1>
+
+            <p class="mt-6 sm:text-xl sm:leading-loose max-w-4xl">
+                I am a <span class="font-medium text-cyan-600">Product Designer, AI Engineer, & UX Specialist</span> with 6 years of experience delivering design & process for 
+                <span class="font-medium text-cyan-600">Enterprise & SaaS Products.</span>
+                I am passionate about user experience, accessibility, and the intersection of human-centered design and artificial intelligence.
+            </p>
+        </header>
+
+        <section class="px-6 grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 text-2xl sm:text-3xl">
+            
+            <a href="ET.html" class="group">
+                <div class="relative overflow-hidden bg-red-50 rounded-xl">
+                    <img class="w-full transition-transform duration-500 group-hover:scale-105" 
+                         src="src/img/index/ET.png" 
+                         alt="Enterprise Product UI Redesign" 
+                         loading="lazy" />
+                    <div class="absolute inset-0 z-10 flex justify-center items-end p-10 md:p-20 text-stone-500 text-opacity-40 group-hover:text-opacity-100 transition-all duration-300">
+                        <span>Enterprise <span class="font-semibold">Design</span></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="native.html" class="group">
+                <div class="relative overflow-hidden bg-amber-50 rounded-xl">
+                    <img class="w-full transition-transform duration-500 group-hover:scale-105" 
+                         src="src/img/index/NA.png" 
+                         alt="Native Mobile App Design Screens" 
+                         loading="lazy" />
+                    <div class="absolute inset-0 z-10 flex justify-center items-end p-10 md:p-20 text-stone-500 text-opacity-40 group-hover:text-opacity-100 transition-all duration-300">
+                        <span>Native App <span class="font-semibold">Design</span></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="process.html" class="group">
+                <div class="relative overflow-hidden bg-indigo-50 rounded-xl">
+                    <img class="w-full transition-transform duration-500 group-hover:scale-105" 
+                         src="src/img/index/PD.png" 
+                         alt="Design Process and Methodology" 
+                         loading="lazy" />
+                    <div class="absolute inset-0 z-10 flex justify-center items-end p-10 md:p-20 text-stone-500 text-opacity-40 group-hover:text-opacity-100 transition-all duration-300">
+                        <span>Process <span class="font-semibold">Design</span></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="CaseStudy.html" class="group">
+                <div class="relative overflow-hidden bg-emerald-50 rounded-xl">
+                    <img class="w-full transition-transform duration-500 group-hover:scale-105" 
+                         src="src/img/index/CS.png" 
+                         alt="Consumer Research Case Study" 
+                         loading="lazy" />
+                    <div class="absolute inset-0 z-10 flex justify-center items-end p-10 md:p-20 text-stone-500 text-opacity-40 group-hover:text-opacity-100 transition-all duration-300">
+                        <span>Case <span class="font-semibold">Study</span></span>
+                    </div>
+                </div>
+            </a>
+
+        </section>
+
+        <footer class="px-6 py-32 grid place-items-center">
+            <a href="mailto:colmmurchu@gmail.com?subject=Hello friend!" aria-label="Send me an email">
+                <svg class="mailTo text-white fill-current h-12 w-12 rounded-full hover:scale-110 transition-transform" viewBox="0 0 36 36">
+                    <path d="M10,10H10c-1.1,0-1.99,0.9-1.99,2L8,24c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V12C28,
+                            10.9,27.1,10,26,10z M10,24H10V14l8,5l8-5V24z M18,17l-8-5h16L18,17z" />
+                </svg>
+            </a>
+        </footer>
+
+    </main>
+</body>
 </html>
