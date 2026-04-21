@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "TAILWIND_MODE=WATCH postcss ./src/tailwind.css -o ./dist/css/styles.css -w -v",
-    "prod": "NODE_ENV=production postcss  ./src/tailwind.css -o ./dist/css/styles.css",
-    "start": "live-server ./ "
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "legacy:dev": "TAILWIND_MODE=WATCH postcss ./src/tailwind.css -o ./dist/css/styles.css -w -v",
+    "legacy:build": "NODE_ENV=production postcss  ./src/tailwind.css -o ./dist/css/styles.css",
+    "legacy:start": "live-server ./ "
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,8 @@
   },
   "homepage": "https://github.com/Murchu/Murchu.github.io#readme",
   "devDependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^6.1.8",
     "autoprefixer": "^10.4.2",
     "cssnano": "^5.0.17",
     "postcss-cli": "^9.1.0",

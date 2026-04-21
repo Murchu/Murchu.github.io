@@ -1,6 +1,7 @@
 module.exports = {
   content: [
-    './*.html'
+    './*.html',
+    './src/**/*.{astro,html,js}'
   ],
   theme: {
     extend: {

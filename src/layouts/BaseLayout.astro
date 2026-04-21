@@ -1,0 +1,71 @@
+---
+import defaultSocialImage from '../img/index/ET.png';
+import '../tailwind.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  noIndex?: boolean;
+}
+
+const {
+  title = 'Colm Murphy | Product & UX Designer',
+  description = 'Portfolio of Colm Murphy, a Product & UX Designer focused on enterprise, SaaS, and product design.',
+  image = defaultSocialImage.src,
+  imageAlt = 'Preview image for the Colm Murphy portfolio',
+  noIndex = false,
+} = Astro.props;
+
+const siteUrl = Astro.site ?? 'https://www.iamcolm.com';
+const canonical = new URL(Astro.url.pathname, siteUrl).toString();
+const socialImage = new URL(image, siteUrl).toString();
+const structuredData = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  url: canonical,
+  image: socialImage,
+  author: {
+    '@type': 'Person',
+    name: 'Colm Murphy',
+    jobTitle: 'Product & UX Designer',
+    url: siteUrl,
+  },
+});
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Colm Murphy" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Colm Murphy" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:image:alt" content={imageAlt} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    {noIndex && <meta name="robots" content="noindex" />}
+    <script type="application/ld+json" set:html={structuredData}></script>
+  </head>
+  <body class="font-MyFont">
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,191 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+type Theme = 'enterprise' | 'native' | 'process' | 'case-study-warm';
+
+interface Props {
+  href: string;
+  badgeLabel: string;
+  title: string;
+  titleAccent?: string;
+  description: string;
+  theme: Theme;
+  asset?: ImageMetadata;
+  badgeIcon?: 'none' | 'search' | 'briefcase' | 'device-phone' | 'squares';
+}
+
+const {
+  href,
+  badgeLabel,
+  title,
+  titleAccent = '',
+  description,
+  theme,
+  asset,
+  badgeIcon = 'none',
+} = Astro.props;
+
+const themePresets = {
+  enterprise: {
+    containerClass: 'min-h-[16.5rem] rounded-md bg-slate-950 md:min-h-[22rem] md:rounded-xl',
+    backgroundLayerClass:
+      'absolute -inset-[22%] bg-[radial-gradient(circle_at_top_right,rgba(167,243,208,0.36),transparent_34%),linear-gradient(315deg,#2dd4bf_0%,#14b8a6_42%,#4f46e5_78%,#1e1b4b_100%)] transition-transform duration-700 ease-out group-hover:-translate-x-[10%] group-hover:-translate-y-[10%]',
+    overlayClass:
+      'absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.12)_0%,transparent_36%,rgba(15,23,42,0.26)_100%)]',
+    glowTopClass:
+      'right-6 top-6 h-24 w-24 border-white/25 bg-white/10 md:right-8 md:top-8 md:h-28 md:w-28',
+    glowBottomClass:
+      'bottom-8 right-8 h-32 w-32 border-teal-100/20 bg-teal-200/10 md:bottom-10 md:right-10 md:h-40 md:w-40',
+    assetClass:
+      'pointer-events-none absolute inset-y-0 right-0 z-0 h-full aspect-square translate-x-full rotate-6 opacity-0 brightness-0 invert transition-[transform,opacity] duration-700 ease-out group-hover:translate-x-[60%] group-hover:rotate-0 group-hover:opacity-80',
+    contentClass:
+      'absolute inset-y-0 left-0 z-20 flex w-full min-w-0 flex-col justify-between p-5 text-white md:w-[60%] md:min-w-[13rem] md:p-8',
+    badgeClass:
+      'inline-flex self-start items-center gap-2 rounded-full border border-white/45 bg-white/12 px-3 py-1.5 font-medium uppercase text-teal-50/92 backdrop-blur-sm text-[10px] tracking-[0.2em] md:px-4 md:py-2 md:text-[11px] md:tracking-[0.24em]',
+    titleClass: 'text-3xl font-light leading-none text-white md:text-4xl',
+    accentClass: 'font-semibold text-white',
+    accentInline: false,
+    dividerClass:
+      'mt-3 h-px w-12 bg-teal-100/90 transition-[width] duration-700 ease-in-out group-hover:w-full md:mt-4 md:w-16',
+    copyClass: 'mt-3 text-sm leading-relaxed text-teal-50/88 md:mt-4',
+  },
+  native: {
+    containerClass: 'min-h-[16.5rem] rounded-md bg-rose-100 md:min-h-[22rem] md:rounded-xl',
+    backgroundLayerClass:
+      'absolute -inset-[22%] bg-[radial-gradient(circle_at_top_right,rgba(255,241,242,0.55),transparent_34%),linear-gradient(315deg,#f472b6_0%,#fb7185_42%,#e11d48_78%,#881337_100%)] transition-transform duration-700 ease-out group-hover:-translate-x-[10%] group-hover:-translate-y-[10%]',
+    overlayClass:
+      'absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.16)_0%,transparent_36%,rgba(136,19,55,0.2)_100%)]',
+    glowTopClass:
+      'right-6 top-6 h-24 w-24 border-white/25 bg-white/10 md:right-8 md:top-8 md:h-28 md:w-28',
+    glowBottomClass:
+      'bottom-8 right-8 h-32 w-32 border-rose-100/20 bg-rose-200/10 md:bottom-10 md:right-10 md:h-40 md:w-40',
+    assetClass:
+      'pointer-events-none absolute inset-y-0 right-0 z-0 h-full aspect-square translate-x-full rotate-6 opacity-0 brightness-0 invert transition-[transform,opacity] duration-700 ease-out group-hover:translate-x-[60%] group-hover:rotate-0 group-hover:opacity-80',
+    contentClass:
+      'absolute inset-y-0 left-0 z-20 flex w-full min-w-0 flex-col justify-between p-5 text-white md:w-[60%] md:min-w-[13rem] md:p-8',
+    badgeClass:
+      'inline-flex self-start items-center gap-2 rounded-full border border-white/45 bg-white/12 px-3 py-1.5 font-medium uppercase text-rose-50/92 backdrop-blur-sm text-[10px] tracking-[0.2em] md:px-4 md:py-2 md:text-[11px] md:tracking-[0.24em]',
+    titleClass: 'text-3xl font-light leading-none text-white md:text-4xl',
+    accentClass: 'font-semibold text-white',
+    accentInline: false,
+    dividerClass:
+      'mt-3 h-px w-12 bg-rose-50/90 transition-[width] duration-700 ease-in-out group-hover:w-full md:mt-4 md:w-16',
+    copyClass: 'mt-3 text-sm leading-relaxed text-rose-50/88 md:mt-4',
+  },
+  process: {
+    containerClass: 'min-h-[16.5rem] rounded-md bg-cyan-100 md:min-h-[22rem] md:rounded-xl',
+    backgroundLayerClass:
+      'absolute -inset-[22%] bg-[radial-gradient(circle_at_top_right,rgba(236,254,255,0.5),transparent_34%),linear-gradient(315deg,#22d3ee_0%,#06b6d4_42%,#0d9488_78%,#134e4a_100%)] transition-transform duration-700 ease-out group-hover:-translate-x-[10%] group-hover:-translate-y-[10%]',
+    overlayClass:
+      'absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.15)_0%,transparent_36%,rgba(19,78,74,0.2)_100%)]',
+    glowTopClass:
+      'right-6 top-6 h-24 w-24 border-white/25 bg-white/10 md:right-8 md:top-8 md:h-28 md:w-28',
+    glowBottomClass:
+      'bottom-8 right-8 h-32 w-32 border-cyan-100/20 bg-cyan-200/10 md:bottom-10 md:right-10 md:h-40 md:w-40',
+    assetClass:
+      'pointer-events-none absolute inset-y-0 right-0 z-0 h-full aspect-square translate-x-full rotate-6 opacity-0 brightness-0 invert transition-[transform,opacity] duration-700 ease-out group-hover:translate-x-[60%] group-hover:rotate-0 group-hover:opacity-80',
+    contentClass:
+      'absolute inset-y-0 left-0 z-20 flex w-full min-w-0 flex-col justify-between p-5 text-white md:w-[60%] md:min-w-[13rem] md:p-8',
+    badgeClass:
+      'inline-flex self-start items-center gap-2 rounded-full border border-white/45 bg-white/12 px-3 py-1.5 font-medium uppercase text-cyan-50/92 backdrop-blur-sm text-[10px] tracking-[0.2em] md:px-4 md:py-2 md:text-[11px] md:tracking-[0.24em]',
+    titleClass: 'text-3xl font-light leading-none text-white md:text-4xl',
+    accentClass: 'font-semibold text-white',
+    accentInline: false,
+    dividerClass:
+      'mt-3 h-px w-12 bg-cyan-50/90 transition-[width] duration-700 ease-in-out group-hover:w-full md:mt-4 md:w-16',
+    copyClass: 'mt-3 text-sm leading-relaxed text-cyan-50/88 md:mt-4',
+  },
+  'case-study-warm': {
+    containerClass:
+      'min-h-[16.5rem] rounded-md bg-amber-200/95 md:min-h-[22rem] md:rounded-xl',
+    backgroundLayerClass:
+      'absolute -inset-[22%] bg-[radial-gradient(circle_at_top_right,rgba(255,245,230,0.5),transparent_34%),linear-gradient(315deg,#fde68a_0%,#fb923c_45%,#c2410c_78%,#7f1d1d_100%)] transition-transform duration-700 ease-out group-hover:-translate-x-[10%] group-hover:-translate-y-[10%]',
+    overlayClass:
+      'absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.16)_0%,transparent_36%,rgba(127,29,29,0.18)_100%)]',
+    glowTopClass:
+      'right-6 top-6 h-24 w-24 border-white/25 bg-white/10 md:right-8 md:top-8 md:h-28 md:w-28',
+    glowBottomClass:
+      'bottom-8 right-8 h-32 w-32 border-orange-100/15 bg-orange-200/10 md:bottom-10 md:right-10 md:h-40 md:w-40',
+    contentClass:
+      'w-full min-w-0 justify-between p-5 md:w-[60%] md:min-w-[13rem] md:p-8',
+    assetClass:
+      'pointer-events-none absolute inset-y-0 right-0 z-0 h-full aspect-square translate-x-full rotate-6 opacity-0 brightness-0 invert transition-[transform,opacity] duration-700 ease-out group-hover:translate-x-[60%] group-hover:rotate-0 group-hover:opacity-80',
+    badgeClass:
+      'inline-flex self-start items-center gap-2 rounded-full border border-white/45 bg-white/12 px-3 py-1.5 font-medium uppercase text-orange-50/90 backdrop-blur-sm text-[10px] tracking-[0.2em] md:px-4 md:py-2 md:text-[11px] md:tracking-[0.24em]',
+    titleClass: 'text-3xl font-light leading-none text-white md:text-4xl',
+    accentClass: 'font-semibold text-white',
+    accentInline: true,
+    dividerClass:
+      'mt-3 h-px w-12 bg-amber-200/90 transition-[width] duration-700 ease-in-out group-hover:w-full md:mt-4 md:w-16',
+    copyClass: 'mt-3 text-sm leading-relaxed text-orange-50/88 md:mt-4',
+  },
+} as const;
+
+const themeConfig = themePresets[theme];
+const assetSizes = theme === 'case-study-warm' ? '(min-width: 768px) 26rem, 22rem' : '(min-width: 768px) 24rem, 18rem';
+const assetShadowClass = {
+  enterprise:
+    'absolute inset-0 z-10 opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100 shadow-[inset_-40px_0_56px_-36px_rgba(30,27,75,0.42)] md:shadow-[inset_-56px_0_72px_-48px_rgba(30,27,75,0.42)]',
+  native:
+    'absolute inset-0 z-10 opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100 shadow-[inset_-40px_0_56px_-36px_rgba(136,19,55,0.42)] md:shadow-[inset_-56px_0_72px_-48px_rgba(136,19,55,0.42)]',
+  process:
+    'absolute inset-0 z-10 opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100 shadow-[inset_-40px_0_56px_-36px_rgba(19,78,74,0.42)] md:shadow-[inset_-56px_0_72px_-48px_rgba(19,78,74,0.42)]',
+  'case-study-warm':
+    'absolute inset-0 z-10 opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100 shadow-[inset_-40px_0_56px_-36px_rgba(124,45,18,0.42)] md:shadow-[inset_-56px_0_72px_-48px_rgba(124,45,18,0.42)]',
+}[theme];
+
+if (!asset) {
+  throw new Error(`FeatureTile theme "${theme}" requires an asset.`);
+}
+
+const badgeIcons = {
+  none: null,
+  search: 'M21 21l-4.35-4.35m1.35-5.15a6.5 6.5 0 11-13 0a6.5 6.5 0 0113 0z',
+  briefcase: 'M8 7V5.75A1.75 1.75 0 019.75 4h4.5A1.75 1.75 0 0116 5.75V7m-8 0h8m-8 0H6.75A1.75 1.75 0 005 8.75v7.5C5 17.216 5.784 18 6.75 18h10.5c.966 0 1.75-.784 1.75-1.75v-7.5A1.75 1.75 0 0017.25 7H16',
+  'device-phone': 'M10.5 4.75h3A1.75 1.75 0 0115.25 6.5v11A1.75 1.75 0 0113.5 19.25h-3a1.75 1.75 0 01-1.75-1.75v-11A1.75 1.75 0 0110.5 4.75zm1.5 11.5h.01',
+  squares: 'M5.75 5.75h4.5v4.5h-4.5zm8 0h4.5v4.5h-4.5zm-8 8h4.5v4.5h-4.5zm8 0h4.5v4.5h-4.5z',
+} as const;
+
+const badgeIconPath = badgeIcons[badgeIcon];
+---
+
+<a href={href}>
+  <div class={`group relative isolate overflow-clip ${themeConfig.containerClass}`}>
+    <div class={themeConfig.backgroundLayerClass}></div>
+    <div class={themeConfig.overlayClass}></div>
+    <div class={`absolute rounded-full blur-2xl transition duration-300 group-hover:scale-110 ${themeConfig.glowTopClass}`}></div>
+    <div class={`absolute rounded-full blur-3xl ${themeConfig.glowBottomClass}`}></div>
+    <Image
+      class={themeConfig.assetClass}
+      src={asset}
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+      sizes={assetSizes}
+    />
+    <div class={assetShadowClass}></div>
+    <div class={`absolute inset-y-0 left-0 z-20 flex flex-col text-white ${themeConfig.contentClass}`}>
+      <span class={themeConfig.badgeClass}>
+        {badgeIconPath && (
+          <svg class="h-3.5 w-3.5 md:h-4 md:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d={badgeIconPath} />
+          </svg>
+        )}
+        {badgeLabel}
+      </span>
+      <div>
+        <h2 class={themeConfig.titleClass}>
+          {title}
+          {titleAccent && (
+            <span class={themeConfig.accentClass}>{themeConfig.accentInline ? ` ${titleAccent}` : titleAccent}</span>
+          )}
+        </h2>
+        <div class={themeConfig.dividerClass}></div>
+        <p class={themeConfig.copyClass}>
+          {description}
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
