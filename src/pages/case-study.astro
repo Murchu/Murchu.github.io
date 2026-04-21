@@ -1,22 +1,30 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SiteHeader from '../components/SiteHeader.astro';
+import caseStudyBanner from '../img/CaseStudy/CaseStudyBanner.webp';
+import taggingWorkflow from '../img/CaseStudy/Tagging.webp';
+import payslipScreens from '../img/CaseStudy/PS.webp';
+import personaExample from '../img/CaseStudy/persona.png';
+import mazeExample from '../img/CaseStudy/maze.webp';
+import empathyMap from '../img/CaseStudy/empathyMap.svg';
 ---
 
 <BaseLayout
   title="Colm Murphy | Payslip Research Case Study"
   description="Case study on payslip research for a native HR app, covering personas, A/B testing, empathy mapping, and UX decision making."
-  image="/src/img/CaseStudy/CaseStudyBanner.webp"
+  image={caseStudyBanner.src}
   imageAlt="Payslip UX research case study preview"
 >
   <SiteHeader gradient="CaseGradient" />
 
   <main class="m-auto font-light text-slate-600 leading-loose">
     <section class="sectionFrame relative CaseGradient overflow-clip group">
-      <img
+      <Image
         class="object-fill absolute opacity-10 transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:blur-sm"
-        src="/src/img/CaseStudy/CaseStudyBanner.webp"
+        src={caseStudyBanner}
         alt="Case study banner artwork"
+        loading="eager"
         fetchpriority="high"
       />
 
@@ -28,7 +36,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         </div>
 
         <div class="w-2/3 hidden sm:block ml-auto z-10 rounded-2xl">
-          <img src="/src/img/CaseStudy/Tagging.webp" alt="Animated tagging research workflow" decoding="async" />
+          <img src={taggingWorkflow.src} alt="Animated tagging research workflow" loading="eager" decoding="async" />
         </div>
       </div>
     </section>
@@ -61,7 +69,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         </div>
 
         <div class="space-y-6">
-          <img class="rounded-xl w-full object-center" src="/src/img/CaseStudy/PS.webp" alt="Payslip product screens" loading="lazy" decoding="async" />
+          <Image class="rounded-xl w-full object-center" src={payslipScreens} alt="Payslip product screens" loading="lazy" sizes="100vw" />
         </div>
       </div>
     </section>
@@ -127,7 +135,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         </div>
 
         <div class="space-y-6">
-          <img class="rounded-xl w-full object-center" src="/src/img/CaseStudy/persona.png" alt="Persona example" loading="lazy" decoding="async" />
+          <Image class="rounded-xl w-full object-center" src={personaExample} alt="Persona example" loading="lazy" sizes="100vw" />
         </div>
       </div>
     </section>
@@ -151,7 +159,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         </div>
 
         <div class="space-y-6">
-          <img class="rounded-xl w-full object-center" src="/src/img/CaseStudy/Tagging.webp" alt="Research tagging workflow" loading="lazy" decoding="async" />
+          <img class="rounded-xl w-full object-center" src={taggingWorkflow.src} alt="Research tagging workflow" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -159,7 +167,7 @@ import SiteHeader from '../components/SiteHeader.astro';
     <section class="sectionFrameOn">
       <div class="sectionDiv twoColumnGrid items-center">
         <div class="space-y-6">
-          <img class="rounded-xl w-full object-center" src="/src/img/CaseStudy/maze.webp" alt="Maze A/B testing results example" loading="lazy" decoding="async" />
+          <img class="rounded-xl w-full object-center" src={mazeExample.src} alt="Maze A/B testing results example" loading="lazy" decoding="async" />
         </div>
 
         <div class="space-y-6">
@@ -213,7 +221,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         </div>
 
         <div class="space-y-6">
-          <img class="rounded-xl w-full object-center" src="/src/img/CaseStudy/empathyMap.svg" alt="Empathy map" loading="lazy" decoding="async" />
+          <img class="rounded-xl w-full object-center" src={empathyMap.src} alt="Empathy map" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>

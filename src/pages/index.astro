@@ -1,12 +1,17 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SiteHeader from '../components/SiteHeader.astro';
+import enterpriseCard from '../img/index/ET.png';
+import nativeCard from '../img/index/NA.png';
+import processCard from '../img/index/PD.png';
+import caseStudyCard from '../img/index/CS.png';
 ---
 
 <BaseLayout
   title="Colm Murphy | Home"
   description="Portfolio of Colm Murphy, a Product and UX Designer focused on enterprise software, SaaS products, accessibility, and research-led design."
-  image="/src/img/index/ET.png"
+  image={enterpriseCard.src}
   imageAlt="Preview of Colm Murphy's enterprise product design work"
 >
   <SiteHeader gradient="none" />
@@ -14,15 +19,21 @@ import SiteHeader from '../components/SiteHeader.astro';
   <main class="mt-4 font-light text-stone-700 leading-loose sm:max-w-screen-xl sm:mx-auto">
     <div>
       <h1 class="px-6 py-4 font-bold text-3xl sm:text-4xl">
-        Hello, <span class="p-2 bg-cyan-50 hover:bg-red-50">I am Colm,</span>
+        Hello, <span class="p-2 bg-cyan-50 hover:bg-red-50 transition-colors duration-300">I am Colm Murphy</span>
       </h1>
 
-      <p class="p-6 sm:mt-4 sm:text-xl sm:leading-loose">
-        I am a <span class="font-medium text-cyan-600">Product &amp; UX Designer</span> with 6 years of experience
-        delivering design systems, research, and product thinking for
-        <span class="font-medium text-cyan-600">enterprise and SaaS products.</span>
-        I care deeply about usability, accessibility, people, and practical product design.
-      </p>
+      <div class="px-6 pt-6 pb-2 max-w-4xl">
+        <h2 class="text-xl sm:text-2xl font-semibold text-cyan-600">Product Designer &amp; AI Engineer</h2>
+
+        <p class="mt-4 sm:text-xl sm:leading-loose">
+          <span class="font-semibold">10 years</span> of experience shaping how software works and feels.
+        </p>
+
+        <p class="mt-4 sm:text-xl sm:leading-loose">
+          I turn complex enterprise strategy into functional, accessible products, using
+          <span class="font-medium text-cyan-600">AI engineering</span> to solve real problems, not just follow trends.
+        </p>
+      </div>
     </div>
 
     <div class="px-6 hidden md:block text-3xl">
@@ -30,7 +41,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         <div>
           <a href="/et">
             <div class="relative overflow-clip bg-red-50 rounded-xl">
-              <img class="w-full" src="/src/img/index/ET.png" alt="Enterprise product design preview" loading="lazy" decoding="async" />
+              <Image class="w-full" src={enterpriseCard} alt="Enterprise product design preview" loading="lazy" sizes="(min-width: 768px) 50vw, 100vw" />
               <div class="absolute p-20 text-opacity-25 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
                 Enterprise<span class="font-semibold">&nbsp;Design</span>
               </div>
@@ -41,7 +52,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         <div>
           <a href="/native">
             <div class="relative overflow-clip bg-amber-50 rounded-xl">
-              <img class="w-full" src="/src/img/index/NA.png" alt="Native app design preview" loading="lazy" decoding="async" />
+              <Image class="w-full" src={nativeCard} alt="Native app design preview" loading="lazy" sizes="(min-width: 768px) 50vw, 100vw" />
               <div class="absolute p-20 text-opacity-25 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
                 Native App<span class="font-semibold">&nbsp;Design</span>
               </div>
@@ -54,7 +65,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         <div>
           <a href="/process">
             <div class="relative overflow-clip bg-indigo-50 rounded-xl">
-              <img class="w-full" src="/src/img/index/PD.png" alt="Product design process preview" loading="lazy" decoding="async" />
+              <Image class="w-full" src={processCard} alt="Product design process preview" loading="lazy" sizes="(min-width: 768px) 50vw, 100vw" />
               <div class="absolute p-20 text-opacity-25 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
                 Process<span class="font-semibold">&nbsp;Design</span>
               </div>
@@ -65,7 +76,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         <div>
           <a href="/case-study">
             <div class="relative overflow-clip bg-emerald-50 rounded-xl">
-              <img class="w-full" src="/src/img/index/CS.png" alt="Payslip case study preview" loading="lazy" decoding="async" />
+              <Image class="w-full" src={caseStudyCard} alt="Payslip case study preview" loading="lazy" sizes="(min-width: 768px) 50vw, 100vw" />
               <div class="absolute p-20 text-opacity-25 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
                 Case<span class="font-semibold">&nbsp;Study</span>
               </div>
@@ -78,7 +89,7 @@ import SiteHeader from '../components/SiteHeader.astro';
     <div class="gap-8 md:hidden columns-1 ml-6 mr-6">
       <a href="/et">
         <div class="mb-6 relative overflow-hidden bg-red-50 rounded-md">
-          <img class="w-full" src="/src/img/index/ET.png" alt="Enterprise product design preview" loading="lazy" decoding="async" />
+          <Image class="w-full" src={enterpriseCard} alt="Enterprise product design preview" loading="lazy" sizes="100vw" />
           <div class="absolute p-10 text-opacity-75 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
             Enterprise<span class="font-semibold">&nbsp;Design</span>
           </div>
@@ -87,7 +98,7 @@ import SiteHeader from '../components/SiteHeader.astro';
 
       <a href="/native">
         <div class="mb-6 relative overflow-hidden bg-amber-50 rounded-md">
-          <img class="w-full" src="/src/img/index/NA.png" alt="Native app design preview" loading="lazy" decoding="async" />
+          <Image class="w-full" src={nativeCard} alt="Native app design preview" loading="lazy" sizes="100vw" />
           <div class="absolute p-10 text-opacity-75 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
             Native App <span class="font-semibold">&nbsp;Design</span>
           </div>
@@ -96,7 +107,7 @@ import SiteHeader from '../components/SiteHeader.astro';
 
       <a href="/process">
         <div class="mb-6 relative overflow-hidden bg-indigo-50 rounded-md">
-          <img class="w-full" src="/src/img/index/PD.png" alt="Product design process preview" loading="lazy" decoding="async" />
+          <Image class="w-full" src={processCard} alt="Product design process preview" loading="lazy" sizes="100vw" />
           <div class="absolute p-10 text-opacity-75 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
             Process<span class="font-semibold">&nbsp;Design</span>
           </div>
@@ -105,7 +116,7 @@ import SiteHeader from '../components/SiteHeader.astro';
 
       <a href="/case-study">
         <div class="mb-6 relative overflow-hidden bg-emerald-50 rounded-md">
-          <img class="w-full" src="/src/img/index/CS.png" alt="Payslip case study preview" loading="lazy" decoding="async" />
+          <Image class="w-full" src={caseStudyCard} alt="Payslip case study preview" loading="lazy" sizes="100vw" />
           <div class="absolute p-10 text-opacity-75 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
             Case<span class="font-semibold">&nbsp;Study</span>
           </div>

@@ -1,4 +1,9 @@
 ---
+import logo from '../img/logos/logo.svg';
+import logoAlt from '../img/logos/logoAlt.svg';
+import smLogo from '../img/logos/SMlogo.svg';
+import smLogoAlt from '../img/logos/SMlogoAlt.svg';
+
 interface Props {
   gradient?: string;
 }
@@ -8,8 +13,8 @@ const isNone = !gradient || gradient === 'none';
 const wrapperClass = isNone ? '' : `${gradient} z-10`;
 const navClass = isNone ? 'text-slate-600' : 'text-slate-200';
 const hoverClass = isNone ? 'hover:text-teal-700' : 'hover:text-white';
-const logoMobile = isNone ? '/src/img/logos/SMlogo.svg' : '/src/img/logos/SMlogoAlt.svg';
-const logoDesktop = isNone ? '/src/img/logos/logo.svg' : '/src/img/logos/logoAlt.svg';
+const logoMobile = isNone ? smLogo.src : smLogoAlt.src;
+const logoDesktop = isNone ? logo.src : logoAlt.src;
 ---
 
 <div class={wrapperClass}>

@@ -1,22 +1,30 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SiteHeader from '../components/SiteHeader.astro';
+import nativeBanner from '../img/Native/native.webp';
+import nativeHero from '../img/Native/NativeBanner.png';
+import designProcessDiagram from '../img/CommonImg/designProcess-07.svg';
+import nativeProfile from '../img/Native/N1.png';
+import nativePay from '../img/Native/N2.png';
+import nativeSystem from '../img/Native/N3.png';
 ---
 
 <BaseLayout
   title="Colm Murphy | Native App Design"
   description="Case study covering Colm Murphy's work on the Access PeopleXD native app, including mobile UX challenges, design systems, and product redesign."
-  image="/src/img/Native/native.webp"
+  image={nativeBanner.src}
   imageAlt="Mobile app interface preview from the Access PeopleXD native app"
 >
   <SiteHeader gradient="NativeGradient" />
 
   <main class="m-auto font-light text-slate-600 leading-loose transition-all">
     <section class="sectionFrame relative NativeGradient overflow-clip group">
-      <img
+      <Image
         class="absolute opacity-10 transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:blur-sm"
-        src="/src/img/Native/native.webp"
+        src={nativeBanner}
         alt="Abstract native app background artwork"
+        loading="eager"
         fetchpriority="high"
       />
 
@@ -28,7 +36,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         </div>
 
         <div class="hidden sm:block ml-auto z-10">
-          <img src="/src/img/Native/NativeBanner.png" alt="Native app banner artwork" />
+          <Image src={nativeHero} alt="Native app banner artwork" loading="eager" />
         </div>
       </div>
     </section>
@@ -114,7 +122,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         <h2 class="pb-6 uppercase text-sm text-gray-400">Sample Design Process</h2>
         <img
           class="max-w-screen-xl m-auto rounded-xl object-center"
-          src="/src/img/CommonImg/designProcess-07.svg"
+          src={designProcessDiagram.src}
           alt="Diagram showing a sample design process"
           loading="lazy"
           decoding="async"
@@ -145,13 +153,13 @@ import SiteHeader from '../components/SiteHeader.astro';
         <hr class="horizontalRule NAhorizontalRuleColour" />
 
         <h3 class="mt-10 uppercase text-sm text-gray-400">Profile</h3>
-        <img class="mt-8 rounded-xl sm:w-full sm:object object-center" src="/src/img/Native/N1.png" alt="Native profile screen design" loading="lazy" decoding="async" />
+        <Image class="mt-8 rounded-xl sm:w-full sm:object object-center" src={nativeProfile} alt="Native profile screen design" loading="lazy" sizes="100vw" />
 
         <h3 class="mt-10 uppercase text-sm text-gray-400">Pay</h3>
-        <img class="mt-8 rounded-xl sm:w-full sm:object object-center" src="/src/img/Native/N2.png" alt="Native pay screen design" loading="lazy" decoding="async" />
+        <Image class="mt-8 rounded-xl sm:w-full sm:object object-center" src={nativePay} alt="Native pay screen design" loading="lazy" sizes="100vw" />
 
         <h3 class="mt-10 uppercase text-sm text-gray-400">Design System</h3>
-        <img class="mt-8 rounded-xl sm:w-full sm:object object-center" src="/src/img/Native/N3.png" alt="Native app design system example" loading="lazy" decoding="async" />
+        <Image class="mt-8 rounded-xl sm:w-full sm:object object-center" src={nativeSystem} alt="Native app design system example" loading="lazy" sizes="100vw" />
       </div>
     </section>
 

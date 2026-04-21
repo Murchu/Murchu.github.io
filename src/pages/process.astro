@@ -1,22 +1,26 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SiteHeader from '../components/SiteHeader.astro';
+import processBanner from '../img/ProcessDesign/ProcessBanner.webp';
+import toolingIllustration from '../img/ProcessDesign/tooling.svg';
 ---
 
 <BaseLayout
   title="Colm Murphy | Process Design"
   description="Colm Murphy's product design process across research, testing, accessibility, delivery, and design team collaboration."
-  image="/src/img/ProcessDesign/ProcessBanner.webp"
+  image={processBanner.src}
   imageAlt="Illustration representing Colm Murphy's product design process"
 >
   <SiteHeader gradient="ProcessGradient" />
 
   <main class="m-auto font-light text-slate-600 leading-loose">
     <section class="sectionFrame relative ProcessGradient overflow-clip group">
-      <img
+      <Image
         class="absolute opacity-10 transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:blur-sm"
-        src="/src/img/ProcessDesign/ProcessBanner.webp"
+        src={processBanner}
         alt="Abstract background for the process design page"
+        loading="eager"
         fetchpriority="high"
       />
 
@@ -28,7 +32,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         </div>
 
         <div class="hidden sm:block ml-auto z-10">
-          <img src="/src/img/ProcessDesign/tooling.svg" alt="Illustration of product design tooling" />
+          <img src={toolingIllustration.src} alt="Illustration of product design tooling" />
         </div>
       </div>
     </section>

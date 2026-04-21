@@ -1,22 +1,30 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SiteHeader from '../components/SiteHeader.astro';
+import enterpriseBanner from '../img/EnterpriseDesign/ETBanner.webp';
+import enterpriseHero from '../img/EnterpriseDesign/home.png';
+import designProcessDiagram from '../img/CommonImg/designProcess-07.svg';
+import dashboardExample from '../img/EnterpriseDesign/dashboard.webp';
+import analyticsExample from '../img/EnterpriseDesign/analytics.webp';
+import workforceExample from '../img/EnterpriseDesign/Time.png';
 ---
 
 <BaseLayout
   title="Colm Murphy | Enterprise Design"
   description="Case study covering Colm Murphy's enterprise product redesign work on Access PeopleXD, including process, research, accessibility, and UI delivery."
-  image="/src/img/EnterpriseDesign/ETBanner.webp"
+  image={enterpriseBanner.src}
   imageAlt="Enterprise dashboard and product interface preview"
 >
   <SiteHeader gradient="gradient" />
 
   <main class="m-auto font-light text-slate-600 leading-loose transition-all">
     <section class="sectionFrame relative gradient overflow-clip group">
-      <img
+      <Image
         class="absolute opacity-10 transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:blur-sm"
-        src="/src/img/EnterpriseDesign/ETBanner.webp"
+        src={enterpriseBanner}
         alt="Abstract enterprise product background"
+        loading="eager"
         fetchpriority="high"
       />
 
@@ -31,7 +39,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         </div>
 
         <div class="hidden sm:block ml-auto z-10">
-          <img src="/src/img/EnterpriseDesign/home.png" alt="Product screens from Access PeopleXD" />
+          <Image src={enterpriseHero} alt="Product screens from Access PeopleXD" loading="eager" />
         </div>
       </div>
     </section>
@@ -155,7 +163,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         <h2 class="pb-6 uppercase text-sm text-gray-400">Sample Design Process</h2>
         <img
           class="max-w-screen-xl m-auto rounded-xl object-center"
-          src="/src/img/CommonImg/designProcess-07.svg"
+          src={designProcessDiagram.src}
           alt="Diagram showing a sample design process"
           loading="lazy"
           decoding="async"
@@ -222,13 +230,13 @@ import SiteHeader from '../components/SiteHeader.astro';
         <hr class="horizontalRule EThorizontalRuleColour" />
 
         <h3 class="mt-10 uppercase text-sm text-gray-400">Dashboards</h3>
-        <img class="mt-8 rounded-xl sm:w-full sm:object object-center" src="/src/img/EnterpriseDesign/dashboard.webp" alt="Enterprise dashboard design example" loading="lazy" decoding="async" />
+        <Image class="mt-8 rounded-xl sm:w-full sm:object object-center" src={dashboardExample} alt="Enterprise dashboard design example" loading="lazy" sizes="100vw" />
 
         <h3 class="mt-10 uppercase text-sm text-gray-400">Analytics</h3>
-        <img class="mt-8 rounded-xl sm:w-full sm:object object-center" src="/src/img/EnterpriseDesign/analytics.webp" alt="Enterprise analytics design example" loading="lazy" decoding="async" />
+        <Image class="mt-8 rounded-xl sm:w-full sm:object object-center" src={analyticsExample} alt="Enterprise analytics design example" loading="lazy" sizes="100vw" />
 
         <h3 class="mt-10 uppercase text-sm text-gray-400">Workforce Management</h3>
-        <img class="mt-8 rounded-xl sm:w-full sm:object object-center" src="/src/img/EnterpriseDesign/Time.png" alt="Workforce management screen design" loading="lazy" decoding="async" />
+        <Image class="mt-8 rounded-xl sm:w-full sm:object object-center" src={workforceExample} alt="Workforce management screen design" loading="lazy" sizes="100vw" />
       </div>
     </section>
 

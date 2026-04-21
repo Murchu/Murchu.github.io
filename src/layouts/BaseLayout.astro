@@ -1,4 +1,5 @@
 ---
+import defaultSocialImage from '../img/index/ET.png';
 import '../tailwind.css';
 
 interface Props {
@@ -12,7 +13,7 @@ interface Props {
 const {
   title = 'Colm Murphy | Product & UX Designer',
   description = 'Portfolio of Colm Murphy, a Product & UX Designer focused on enterprise, SaaS, and product design.',
-  image = '/src/img/index/ET.png',
+  image = defaultSocialImage.src,
   imageAlt = 'Preview image for the Colm Murphy portfolio',
   noIndex = false,
 } = Astro.props;
