@@ -1,11 +1,11 @@
 ---
-import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import FeatureTile from '../components/FeatureTile.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import enterpriseCard from '../img/index/ET.png';
 import nativeCard from '../img/index/NA.png';
 import processCard from '../img/index/PD.png';
-import caseStudyCard from '../img/index/CS.png';
+import circularOrnament from '../img/CaseStudy/CircularOrnament45.svg';
 ---
 
 <BaseLayout
@@ -27,92 +27,108 @@ import caseStudyCard from '../img/index/CS.png';
       </p>
     </header>
 
-    <div class="px-6 hidden md:block text-3xl">
-      <div class="columns-2 gap-8 mt-10">
-        <div>
-          <a href="/et">
-            <div class="relative overflow-clip bg-red-50 rounded-xl">
-              <Image class="w-full" src={enterpriseCard} alt="Enterprise product design preview" loading="lazy" sizes="(min-width: 768px) 50vw, 100vw" />
-              <div class="absolute p-20 text-opacity-25 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
-                Enterprise<span class="font-semibold">&nbsp;Design</span>
-              </div>
-            </div>
-          </a>
-        </div>
+    <div class="px-6 hidden lg:block text-3xl">
+      <div class="grid grid-cols-2 gap-8 mt-10">
+        <FeatureTile
+          href="/et"
+          badgeLabel="Case Study"
+          badgeIcon="briefcase"
+          title="Enterprise"
+          titleAccent="Design"
+          description="Research, systems thinking, and enterprise product delivery."
+          theme="enterprise"
+          asset={circularOrnament}
+        />
 
-        <div>
-          <a href="/native">
-            <div class="relative overflow-clip bg-amber-50 rounded-xl">
-              <Image class="w-full" src={nativeCard} alt="Native app design preview" loading="lazy" sizes="(min-width: 768px) 50vw, 100vw" />
-              <div class="absolute p-20 text-opacity-25 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
-                Native App<span class="font-semibold">&nbsp;Design</span>
-              </div>
-            </div>
-          </a>
-        </div>
+        <FeatureTile
+          href="/native"
+          badgeLabel="Mobile Product"
+          badgeIcon="device-phone"
+          title="Native App"
+          titleAccent="Design"
+          description="Mobile UX, flows, and design systems for native product experiences."
+          theme="native"
+          asset={circularOrnament}
+        />
       </div>
 
-      <div class="gap-8 columns-2 mt-10">
-        <div>
-          <a href="/process">
-            <div class="relative overflow-clip bg-indigo-50 rounded-xl">
-              <Image class="w-full" src={processCard} alt="Product design process preview" loading="lazy" sizes="(min-width: 768px) 50vw, 100vw" />
-              <div class="absolute p-20 text-opacity-25 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
-                Process<span class="font-semibold">&nbsp;Design</span>
-              </div>
-            </div>
-          </a>
-        </div>
+      <div class="grid grid-cols-2 gap-8 mt-10">
+        <FeatureTile
+          href="/process"
+          badgeLabel="Framework"
+          badgeIcon="squares"
+          title="Process"
+          titleAccent="Design"
+          description="Discovery, testing, and delivery methods for product teams."
+          theme="process"
+          asset={circularOrnament}
+        />
 
-        <div>
-          <a href="/case-study">
-            <div class="relative overflow-clip bg-emerald-50 rounded-xl">
-              <Image class="w-full" src={caseStudyCard} alt="Payslip case study preview" loading="lazy" sizes="(min-width: 768px) 50vw, 100vw" />
-              <div class="absolute p-20 text-opacity-25 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
-                Case<span class="font-semibold">&nbsp;Study</span>
-              </div>
-            </div>
-          </a>
-        </div>
+        <FeatureTile
+          href="/case-study"
+          badgeLabel="Research"
+          title="Case"
+          titleAccent="Study"
+          description="A focused UX research story from insight through concept validation."
+          theme="case-study-warm"
+          asset={circularOrnament}
+          badgeIcon="search"
+        />
       </div>
     </div>
 
-    <div class="gap-8 md:hidden columns-1 ml-6 mr-6">
-      <a href="/et">
-        <div class="mb-6 relative overflow-hidden bg-red-50 rounded-md">
-          <Image class="w-full" src={enterpriseCard} alt="Enterprise product design preview" loading="lazy" sizes="100vw" />
-          <div class="absolute p-10 text-opacity-75 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
-            Enterprise<span class="font-semibold">&nbsp;Design</span>
-          </div>
-        </div>
-      </a>
+    <div class="gap-8 lg:hidden columns-1 ml-6 mr-6">
+      <div class="mb-6">
+        <FeatureTile
+          href="/et"
+          badgeLabel="Case Study"
+          badgeIcon="briefcase"
+          title="Enterprise"
+          titleAccent="Design"
+          description="Research, systems thinking, and enterprise product delivery."
+          theme="enterprise"
+          asset={circularOrnament}
+        />
+      </div>
 
-      <a href="/native">
-        <div class="mb-6 relative overflow-hidden bg-amber-50 rounded-md">
-          <Image class="w-full" src={nativeCard} alt="Native app design preview" loading="lazy" sizes="100vw" />
-          <div class="absolute p-10 text-opacity-75 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
-            Native App <span class="font-semibold">&nbsp;Design</span>
-          </div>
-        </div>
-      </a>
+      <div class="mb-6">
+        <FeatureTile
+          href="/native"
+          badgeLabel="Mobile Product"
+          badgeIcon="device-phone"
+          title="Native App"
+          titleAccent="Design"
+          description="Mobile UX, flows, and design systems for native product experiences."
+          theme="native"
+          asset={circularOrnament}
+        />
+      </div>
 
-      <a href="/process">
-        <div class="mb-6 relative overflow-hidden bg-indigo-50 rounded-md">
-          <Image class="w-full" src={processCard} alt="Product design process preview" loading="lazy" sizes="100vw" />
-          <div class="absolute p-10 text-opacity-75 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
-            Process<span class="font-semibold">&nbsp;Design</span>
-          </div>
-        </div>
-      </a>
+      <div class="mb-6">
+        <FeatureTile
+          href="/process"
+          badgeLabel="Framework"
+          badgeIcon="squares"
+          title="Process"
+          titleAccent="Design"
+          description="Discovery, testing, and delivery methods for product teams."
+          theme="process"
+          asset={circularOrnament}
+        />
+      </div>
 
-      <a href="/case-study">
-        <div class="mb-6 relative overflow-hidden bg-emerald-50 rounded-md">
-          <Image class="w-full" src={caseStudyCard} alt="Payslip case study preview" loading="lazy" sizes="100vw" />
-          <div class="absolute p-10 text-opacity-75 hover:text-opacity-100 duration-300 inset-0 z-10 flex justify-center items-end text-stone-500">
-            Case<span class="font-semibold">&nbsp;Study</span>
-          </div>
-        </div>
-      </a>
+      <div class="mb-6">
+        <FeatureTile
+          href="/case-study"
+          badgeLabel="Research"
+          title="Case"
+          titleAccent="Study"
+          description="A focused UX research story from insight through concept validation."
+          theme="case-study-warm"
+          asset={circularOrnament}
+          badgeIcon="search"
+        />
+      </div>
     </div>
 
     <div class="px-6 py-32 grid place-items-center">
