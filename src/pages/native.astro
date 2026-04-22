@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactSection from '../components/ContactSection.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import nativeBanner from '../img/Native/native.webp';
 import nativeHero from '../img/Native/NativeBanner.png';
@@ -163,12 +164,6 @@ import nativeSystem from '../img/Native/N3.png';
       </div>
     </section>
 
-    <div class="px-6 py-32 grid place-items-center">
-      <a href="mailto:colmmurchu@gmail.com?subject=Hello friend!" aria-label="Email Colm Murphy">
-        <svg class="mailTo text-white fill-current h-10 w-10 rounded-full" viewBox="0 0 36 36" aria-hidden="true">
-          <path d="M10,10H10c-1.1,0-1.99,0.9-1.99,2L8,24c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V12C28,10.9,27.1,10,26,10z M10,24H10V14l8,5l8-5V24z M18,17l-8-5h16L18,17z" />
-        </svg>
-      </a>
-    </div>
+    <ContactSection />
   </main>
 </BaseLayout>
